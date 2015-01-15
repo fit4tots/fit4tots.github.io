@@ -6,6 +6,6 @@ versions = JSON.parse open('https://pages.github.com/versions.json').read
 
 ruby versions['ruby']
 
-gem 'bundler', '>= 1.7.10'
+gem 'bundler', '>= 1.7.12'
 
 gem 'github-pages', versions['github-pages']
