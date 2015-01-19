@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  {% include head.html %}
-
+  {% include layouts/head.html %}
   <body>
-    <!-- {% include header.html %} -->
+    {% comment %}
+      {% include layouts/header.html %}
+    {% endcomment %}
 
-    <main class="row">
-      <div class="columns">
-        {{ content }}
-      </div>
-    </div>
+    <main>{{ content }}</main>
 
-    <!-- {% include footer.html %} -->
+    {% comment %}
+      {% include layouts/footer.html %}
+    {% endcomment %}
 
-    {% include bottom.html %}
+    {% include layouts/bottom.html %}
   </body>
-
 </html>
