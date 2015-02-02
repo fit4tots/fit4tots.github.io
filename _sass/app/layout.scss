@@ -1,0 +1,11 @@
+header a.logo {
+  display: block;
+  z-index: 1;
+
+  margin: 1rem;
+
+  object, img {
+    pointer-events: none;
+    z-index: -1;
+  }
+}
