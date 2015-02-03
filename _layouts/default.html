@@ -2,22 +2,12 @@
 <html class="no-js" lang="en">
   {% include layouts/head.html %}
   <body>
-    <header>
-      <a href="{{ site.baseurl }}/" class="logo"><object
-           type="image/svg+xml" data="{{ site.baseurl }}/images/fit4tots_logo.svg"></object></a>
-      <a href="{{ site.baseurl }}/" class="logo"><img src="{{ site.baseurl }}/images/fit4tots_logo.svg"/></a>
-    <header>
+    <div class="wrapper-for-content-outside-of-footer">
+      {% include layouts/refills/header.html %}
 
-    {% comment %}
-      {% include layouts/header.html %}
-    {% endcomment %}
-
-    <main>{{ content }}</main>
-
-    {% comment %}
-      {% include layouts/footer.html %}
-    {% endcomment %}
-
+      <main>{{ content }}</main>
+    </div>
+    {% include layouts/refills/footer.html %}
     {% include layouts/bottom.html %}
   </body>
 </html>

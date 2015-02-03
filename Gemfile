@@ -9,3 +9,7 @@ ruby versions['ruby']
 gem 'bundler', '>= 1.7.12'
 
 gem 'github-pages', versions['github-pages']
+
+gem 'bourbon', '4.1.1'
+gem 'neat', '1.7.1'
+gem 'bitters', '1.0.0'
