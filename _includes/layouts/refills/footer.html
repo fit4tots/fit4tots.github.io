@@ -1,27 +1,22 @@
 <footer class="footer-2" role="contentinfo">
-  <div class="footer-logo">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
-  </div>
-    <ul>
-      <li><a href="javascript:void(0)">About</a></li>
-      <li><a href="javascript:void(0)">Contact</a></li>
-      <li><a href="javascript:void(0)">Products</a></li>
-    </ul>
+  <ul>
+    <li><a href="javascript:void(0)">About Us</a></li>
+  </ul>
 
-    <div class="footer-secondary-links">
-      <ul>
-        <li><span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</span></li>
+  <div class="footer-secondary-links">
+    <ul>
+      <li><span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</span></li>
+
+      {% comment %}
         <li><a href="javascript:void(0)">Terms and Conditions</a></li>
         <li><a href="javascript:void(0)">Privacy Policy</a></li>
-      </ul>
+      {% endcomment %}
+    </ul>
 
-      <ul class="footer-social">
-        <li><a href="javascript:void(0)">
-          <img src="{{ site.baseurl }}/images/facebook_circle.svg" alt="Facebook">
-          </a></li>
-        <li><a href="javascript:void(0)">
-          <img src="{{ site.baseurl }}/images/twitter_circle.svg" alt="Twitter">
+    <ul class="footer-social">
+      <li><a href="https://facebook.com/{{ site.facebook_username }}" target="_blank"><img src="{{ site.baseurl }}/images/facebook_circle.svg" alt="Facebook">
         </a></li>
-      </ul>
-    </div>
+      <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><img src="{{ site.baseurl }}/images/twitter_circle.svg" alt="Twitter"></a></li>
+    </ul>
+  </div>
 </footer>
