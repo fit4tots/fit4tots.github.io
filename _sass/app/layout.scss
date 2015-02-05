@@ -62,5 +62,6 @@ nav.top-bar {
   font-size: rem-calc(12);
   line-height: 0;
   z-index: 10000;
-  &.development { display: block; }
+  display: none;
+  &.development, &.staging { display: block; }
 }
