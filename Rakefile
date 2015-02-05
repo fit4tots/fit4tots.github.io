@@ -11,27 +11,9 @@ namespace :haml do
     File.open(File.join(destination, base_name), 'w') { |f| f.write html }
   end
 
-  desc 'Parse haml layout files'
-  task :layouts do
-    Dir.glob('_layouts/**/*.html.haml') do |path|
-      convert path, '_layouts'
-    end
-
-    puts 'Parsed haml layout files'
-  end
-
-  desc 'Parse haml include files'
-  task :includes do
-    Dir.glob('_includes/**/*.html.haml') do |path|
-      convert path, '_includes'
-    end
-
-    puts 'Parsed haml include files'
-  end
-
-  desc 'Parse haml index files'
-  task :indexes do
-    Dir.glob('**/index.html.haml') do |path|
+  desc 'Parse haml all files'
+  task :all do
+    Dir.glob('**/*.html.haml') do |path|
       convert path, File.dirname(path)
     end
 
@@ -41,7 +23,7 @@ namespace :haml do
 end
 
 desc 'Parse all haml items'
-task haml: ['haml:layouts', 'haml:includes', 'haml:indexes']
+task haml: ['haml:all']
 
 desc 'Build all haml files for deployment'
 task build: [:haml]
