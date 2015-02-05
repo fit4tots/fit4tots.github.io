@@ -13,7 +13,7 @@ namespace :haml do
 
   desc 'Parse haml layout files'
   task :layouts do
-    Dir.glob('_layouts/*.html.haml') do |path|
+    Dir.glob('_layouts/**/*.html.haml') do |path|
       convert path, '_layouts'
     end
 
@@ -22,7 +22,7 @@ namespace :haml do
 
   desc 'Parse haml include files'
   task :includes do
-    Dir.glob('_includes/*.html.haml') do |path|
+    Dir.glob('_includes/**/*.html.haml') do |path|
       convert path, '_includes'
     end
 
