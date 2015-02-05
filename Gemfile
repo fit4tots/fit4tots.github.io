@@ -16,3 +16,4 @@ gem 'bitters', '1.0.0'
 
 gem 'haml'
 gem 'guard-haml'
+gem 'rake'
