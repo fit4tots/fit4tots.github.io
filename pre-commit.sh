@@ -4,10 +4,10 @@
 #   mkdir -p .git/hooks && ln -sf ../../pre-commit.sh .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 
 ### Are any Sass files canged and added?
-if git status -s | grep  '^M.\+\.haml$'
+if git status -s | grep '^M.\+\.haml$'
 then
   rake build
-  git add -f *.html **/*.html
+  find . -type f -name "*.html" | xargs git add
 fi
 
 exit 0
