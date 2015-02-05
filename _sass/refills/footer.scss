@@ -1,6 +1,6 @@
 // Sticky footer.
 
-.wrapper-for-content-outside-of-footer {
+.outside-footer {
   min-height: 100%;
   height: auto !important;
   height: 100%;
@@ -11,12 +11,12 @@ html, body {
  height: 100%;
 }
 
-.wrapper-for-content-outside-of-footer:after {
+.outside-footer:after {
   content: "";
   display: block;
 }
 
-.footer-2, .wrapper-for-content-outside-of-footer:after {
+.footer-2, .outside-footer:after {
   height: 17em;
 
   @include media($large-screen) {
