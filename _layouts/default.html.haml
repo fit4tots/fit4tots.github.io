@@ -6,7 +6,10 @@
       .inner-wrap
         {% include layouts/top_bar.html %}
 
-        %main(role="main") {{ content }}
+        %main(role="main")
+          .row
+            .columns
+              {{ content }}
 
         %a.exit-off-canvas
 

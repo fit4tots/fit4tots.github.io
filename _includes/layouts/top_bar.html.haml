@@ -1,28 +1,29 @@
-%nav.top-bar(data-topbar role='navigation')
-  %ul.title-area
-    %li.name
-      %a.logo{href: "{{ '/' | prepend: site.baseurl }}"}
-        %img{src: "{{ '/images/logo-outline.svg' | prepend: site.baseurl }}" }
+%a#nav_logo.fixed{href: "{{ '/' | prepend: site.baseurl }}"}
+  %img{src: "{{ '/images/logo-outline.svg' | prepend: site.baseurl }}" }
 
-    %li.toggle-topbar
-      %a{href: 'javacript:void(0)'}
-        %span Menu
+.sticky
+  %nav.top-bar(data-topbar role='navigation' data-options='sticky_on: medium')
+    %ul.title-area
+      %li.name
+      %li.toggle-topbar
+        %a{href: 'javacript:void(0)'}
+          %span Menu
 
-  %section.top-bar-section
-    %ul.left
-      {% unless page.path == 'index.html' %}
-      %li
-        %a{ href: "{{ '/' | prepend: site.baseurl }}"} Home
-      {% endunless %}
+    %section.top-bar-section
+      %ul.left
+        {% unless page.path == 'index.html' %}
+        %li
+          %a{ href: "{{ '/' | prepend: site.baseurl }}"} Home
+        {% endunless %}
 
-      %li{class: "{% if page.path contains 'contact_us' %}{{ 'active'}}{% endif %}" }
-        %a{href: "{{ '/contact_us' | prepend: site.baseurl }}"} Contact us
+        %li{class: "{% if page.path contains 'contact_us' %}{{ 'active'}}{% endif %}" }
+          %a{href: "{{ '/contact_us' | prepend: site.baseurl }}"} Contact us
 
 
-    %ul.social.right
-      %li
-        %a{href: "https://facebook.com/{{ site.facebook_username }}", target: '_blank'}
-          %img{src: "{{ '/images/facebook_circle.svg' | prepend: site.baseurl }}", alt: 'Facebook'}
-      %li
-        %a{href: "https://twitter.com/{{ site.twitter_username }}", target: '_blank'}
-          %img{src: "{{ '/images/twitter_circle.svg' | prepend: site.baseurl }}", alt: 'Facebook'}
+      %ul.social.right
+        %li
+          %a{href: "https://facebook.com/{{ site.facebook_username }}", target: '_blank'}
+            %img{src: "{{ '/images/facebook_circle.svg' | prepend: site.baseurl }}", alt: 'Facebook'}
+        %li
+          %a{href: "https://twitter.com/{{ site.twitter_username }}", target: '_blank'}
+            %img{src: "{{ '/images/twitter_circle.svg' | prepend: site.baseurl }}", alt: 'Facebook'}

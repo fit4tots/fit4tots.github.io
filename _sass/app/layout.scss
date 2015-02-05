@@ -12,30 +12,34 @@
 
 $logo_width: rem-calc(96);
 
-nav.top-bar {
-  a.logo {
-    position: fixed;
-    line-height: 0;
-    display: block;
-    margin: rem-calc(8 0 0 16);
-    z-index: 1;
-
-    img {
-      display: block;
-      width: $logo_width;
-      height: $logo_width;
-      background: $f4t_blue;
-      border: rem-calc(2) solid $f4t_pink;
-      border-radius: rem-calc(24);
-      padding: rem-calc(4);
-
-      cursor: pointer;
-      pointer-events: none;
-      z-index: -1;
-      display: block;
-    }
+a#nav_logo {
+  @media #{$small-only} {
+    position: absolute !important;
   }
 
+  line-height: 0;
+  display: block;
+  top: rem-calc(8);
+  left: rem-calc(16);
+  z-index: 100;
+
+  img {
+    display: block;
+    width: $logo_width;
+    height: $logo_width;
+    background: $f4t_blue;
+    border: rem-calc(2) solid $f4t_pink;
+    border-radius: rem-calc(24);
+    padding: rem-calc(4);
+
+    cursor: pointer;
+    pointer-events: none;
+    z-index: -1;
+    display: block;
+  }
+}
+
+nav.top-bar {
   @media #{$medium-up} {
     .top-bar-section {
       margin-left: $logo_width + rem-calc(32) !important;
@@ -48,6 +52,10 @@ nav.top-bar {
     border: 0;
     background-color: $white;
   }
+}
+
+body > div > div > main {
+  padding-top: $logo_width - $topbar-height + rem-calc(16);
 }
 
 #environment {
