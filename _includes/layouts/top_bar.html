@@ -12,7 +12,17 @@
     </li>
   </ul>
   <section class="top-bar-section">
-    <ul class="right">
+    <ul class="left">
+      {% unless page.path == 'index.html' %}
+      <li>
+        <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+      </li>
+      {% endunless %}
+      <li class="{% if page.path contains 'contact_us' %}{{ 'active'}}{% endif %}">
+        <a href="{{ '/contact_us' | prepend: site.baseurl }}">Contact us</a>
+      </li>
+    </ul>
+    <ul class="social right">
       <li>
         <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
           <img alt="Facebook" src="{{ '/images/facebook_circle.svg' | prepend: site.baseurl }}">
@@ -22,16 +32,6 @@
         <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
           <img alt="Facebook" src="{{ '/images/twitter_circle.svg' | prepend: site.baseurl }}">
         </a>
-      </li>
-    </ul>
-    <ul class="left">
-      {% unless page.path == 'index.html' %}
-      <li>
-        <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
-      </li>
-      {% endunless %}
-      <li class="{% if page.path contains 'contact_us' %}{{ 'active'}}{% endif %}">
-        <a href="{{ '/contact_us' | prepend: site.baseurl }}">Contact us</a>
       </li>
     </ul>
   </section>

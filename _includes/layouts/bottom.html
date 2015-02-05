@@ -1,2 +1,10 @@
+<div class="{{ site.environment }}" id="environment">
+  {{ site.environment | capitalize }}
+  <span>
+    <span class="show-for-small-only">[small]</span>
+    <span class="show-for-medium-only">[medium]</span>
+    <span class="show-for-large-only">[large]</span>
+  </span>
+</div>
 <script charset="utf-8" src="{{ '/js/vendor.js' | prepend: site.baseurl }}"></script>
 <script charset="utf-8" src="{{ '/js/app.js' | prepend: site.baseurl }}"></script>

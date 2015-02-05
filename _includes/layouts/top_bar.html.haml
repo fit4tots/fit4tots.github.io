@@ -9,14 +9,6 @@
         %span Menu
 
   %section.top-bar-section
-    %ul.right
-      %li
-        %a{href: "https://facebook.com/{{ site.facebook_username }}", target: '_blank'}
-          %img{src: "{{ '/images/facebook_circle.svg' | prepend: site.baseurl }}", alt: 'Facebook'}
-      %li
-        %a{href: "https://twitter.com/{{ site.twitter_username }}", target: '_blank'}
-          %img{src: "{{ '/images/twitter_circle.svg' | prepend: site.baseurl }}", alt: 'Facebook'}
-
     %ul.left
       {% unless page.path == 'index.html' %}
       %li
@@ -25,3 +17,12 @@
 
       %li{class: "{% if page.path contains 'contact_us' %}{{ 'active'}}{% endif %}" }
         %a{href: "{{ '/contact_us' | prepend: site.baseurl }}"} Contact us
+
+
+    %ul.social.right
+      %li
+        %a{href: "https://facebook.com/{{ site.facebook_username }}", target: '_blank'}
+          %img{src: "{{ '/images/facebook_circle.svg' | prepend: site.baseurl }}", alt: 'Facebook'}
+      %li
+        %a{href: "https://twitter.com/{{ site.twitter_username }}", target: '_blank'}
+          %img{src: "{{ '/images/twitter_circle.svg' | prepend: site.baseurl }}", alt: 'Facebook'}

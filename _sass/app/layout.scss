@@ -1,13 +1,23 @@
-@import "./foundation_settings";
+@media #{$medium-up} {
+  .medium-right {
+    float: right !important;
+  }
+}
 
-$logo_width: rem(96);
+@media #{$large-up} {
+  .large-right {
+    float: right !important;
+  }
+}
+
+$logo_width: rem-calc(96);
 
 nav.top-bar {
   a.logo {
     position: fixed;
     line-height: 0;
     display: block;
-    margin: rem(8) 0 0 rem(16);
+    margin: rem-calc(8 0 0 16);
     z-index: 1;
 
     img {
@@ -15,9 +25,9 @@ nav.top-bar {
       width: $logo_width;
       height: $logo_width;
       background: $f4t_blue;
-      border: rem(2) solid $f4t_pink;
-      border-radius: rem(24);
-      padding: rem(4);
+      border: rem-calc(2) solid $f4t_pink;
+      border-radius: rem-calc(24);
+      padding: rem-calc(4);
 
       cursor: pointer;
       pointer-events: none;
@@ -28,7 +38,29 @@ nav.top-bar {
 
   @media #{$medium-up} {
     .top-bar-section {
-      margin-left: $logo_width + rem(32) !important;
+      margin-left: $logo_width + rem-calc(32) !important;
     }
   }
+
+  ul.social img {
+    width: rem-calc(32);
+    border-radius: $global-rounded;
+    border: 0;
+    background-color: $white;
+  }
+}
+
+#environment {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding: rem-calc(12);
+  background-color: rgb(246, 139,  31);
+  border-top-left-radius: $global-radius * 2;
+  color: #fff;
+  font-size: rem-calc(12);
+  line-height: 0;
+  z-index: 10000;
+  &.development { display: block; }
 }
