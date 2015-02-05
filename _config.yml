@@ -12,6 +12,8 @@ twitter_username: fit4tots
 facebook_username: fit4totsUK
 timezone: Europe/London
 
+environment: production
+
 # Build settings
 markdown: kramdown
 
