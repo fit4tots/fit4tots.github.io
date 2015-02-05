@@ -7,7 +7,7 @@
 if git status -s | grep  '^M.\+\.haml$'
 then
   rake build
-  git add -f **/*.html
+  git add -f *.html
 fi
 
 exit 0
