@@ -1,22 +1,57 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+  <head>
+  <meta charset='utf-8'>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+  <title>
+    Fit4Tots
+  </title>
+  <meta content='Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+' name='description'>
+  <link href="/css/app.css" rel='stylesheet'>
+  <link href="http://wildcountry.github.io/" rel='canonical'>
+  <link href='http://wildcountry.github.io/feed.xml' rel='alternate' title='Fit4Tots' type='application/rss+xml'>
+  <script charset='utf-8' src='/js/modernizr-2.8.3.min.js'></script>
+</head>
 
-<div>
+  <body>
+    <div class='wrapper-for-content-outside-of-footer'>
+      <header class='navigation' role='banner'>
+  <div class="navigation-wrapper">
+    <a href="/" class="logo"><object
+       type="image/svg+xml" data="/images/logo-outline.svg"></object></a>
+  
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        
+        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Contact Us</a></li>
+        <ul class="header-social">
+          <li><a href="https://facebook.com/fit4totsUK" target="_blank"><img src="/images/facebook_circle.svg" alt="Facebook"></a></li>
+          <li class="nav-link"><a href="https://twitter.com/fit4tots" target="_blank"><img src="/images/twitter_circle.svg" alt="Twitter"></a></li>
+        </ul>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      <main role='main'><div>
   <h1>Posts XX</h1>
 
   <ul>
-    {% for post in site.posts %}
+    
       <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span>Jan 14, 2015</span>
         <h2>
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a href="/jekyll/update/2015/01/14/welcome-to-jekyll.html">Welcome to Jekyll!</a>
         </h2>
       </li>
-    {% endfor %}
+    
   </ul>
 
-  <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p>subscribe <a href="/feed.xml">via RSS</a></p>
 
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -46,3 +81,30 @@ layout: default
   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
+</main>
+    </div>
+    <footer class='footer-2' role='contentinfo'>
+  <ul>
+    <li><a href="javascript:void(0)">About Us</a></li>
+  </ul>
+  
+  <div class="footer-secondary-links">
+    <ul>
+      <li><span>&copy; 2015 Fit4Tots</span></li>
+  
+      
+    </ul>
+  
+    <ul class="footer-social">
+      <li><a href="https://facebook.com/fit4totsUK" target="_blank"><img src="/images/facebook_circle.svg" alt="Facebook">
+        </a></li>
+      <li><a href="https://twitter.com/fit4tots" target="_blank"><img src="/images/twitter_circle.svg" alt="Twitter"></a></li>
+    </ul>
+  </div>
+</footer>
+
+    <script charset='utf-8' src="/js/vendor.js"></script>
+<script charset='utf-8' src="/js/app.js"></script>
+
+  </body>
+</html>
