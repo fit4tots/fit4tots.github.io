@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html class='no-js' lang='en'>
+<html class="no-js" lang="en">
   {% include layouts/head.html %}
   <body>
-    <div class='outside-footer'>
-      {% include layouts/refills/header.html %}
-      <main role='main'>{{ content }}</main>
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        {% include layouts/top_bar.html %}
+        <main role="main">{{ content }}</main>
+        <a class="exit-off-canvas"></a>
+      </div>
     </div>
-    {% include layouts/refills/footer.html %}
+    {% include layouts/footer.html %}
     {% include layouts/bottom.html %}
   </body>
 </html>

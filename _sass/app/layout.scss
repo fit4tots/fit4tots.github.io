@@ -1,15 +1,16 @@
+@import "./foundation_settings";
+
 $logo_width: rem(96);
 
-header {
+nav.top-bar {
   a.logo {
     position: fixed;
     line-height: 0;
     display: block;
-    margin-top: rem(12);
+    margin: rem(8) 0 0 rem(16);
     z-index: 1;
 
-    object, img {
-      box-sizing: border-box;
+    img {
       display: block;
       width: $logo_width;
       height: $logo_width;
@@ -25,7 +26,9 @@ header {
     }
   }
 
-  > div > nav {
-    margin-left: $logo_width + rem(48);
+  @media #{$medium-up} {
+    .top-bar-section {
+      margin-left: $logo_width + rem(32) !important;
+    }
   }
 }

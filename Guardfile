@@ -32,7 +32,7 @@ group :frontend do
   # notifications: true                send notifictions to Growl/libnotify/Notifu
   # haml_options: { ugly: true }    pass options to the Haml engine
 
-  guard :haml, run_at_start: true do
+  guard :haml, run_at_start: true, haml_options: { attr_wrapper: %["] } do
     watch(/^.+(\.html\.haml)$/)
   end
 end

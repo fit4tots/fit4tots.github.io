@@ -7,7 +7,7 @@ namespace :haml do
 
   def convert file, destination
     base_name = File.basename(file, '.html.haml') + '.html'
-    html = File.open(file, 'r') { |f| Haml::Engine.new(f.read).render }
+    html = File.open(file, 'r') { |f| Haml::Engine.new(f.read, attr_wrapper: %["]).render }
     File.open(File.join(destination, base_name), 'w') { |f| f.write html }
   end
 

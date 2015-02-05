@@ -1,11 +1,14 @@
 !!! 5
-%html(class="no-js" lang="en")
+%html{ class: 'no-js', lang: 'en'}
   {% include layouts/head.html %}
   %body
-    .outside-footer
-      {% include layouts/refills/header.html %}
+    .off-canvas-wrap(data-offcanvas)
+      .inner-wrap
+        {% include layouts/top_bar.html %}
 
-      %main(role="main") {{ content }}
+        %main(role="main") {{ content }}
 
-    {% include layouts/refills/footer.html %}
+        %a.exit-off-canvas
+
+    {% include layouts/footer.html %}
     {% include layouts/bottom.html %}

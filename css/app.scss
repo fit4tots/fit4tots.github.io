@@ -13,13 +13,6 @@ html {
 @import "app/variables";
 
 @import "vendor/normalize";
-
 @import "vendor/bourbon-4.1.1/bourbon";
-@import "vendor/bitters-1.0.0/base/grid-settings";
-@import "vendor/neat-1.7.1/neat";
-@import "vendor/bitters-1.0.0/base/base";
-
-@import "refills/navigation";
-@import "refills/footer";
-@import "app/global";
+@import "app/foundation";
 @import "app/layout";
