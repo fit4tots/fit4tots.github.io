@@ -13,3 +13,6 @@ gem 'github-pages', versions['github-pages']
 gem 'bourbon', '4.1.1'
 gem 'neat', '1.7.1'
 gem 'bitters', '1.0.0'
+
+gem 'haml'
+gem 'guard-haml'

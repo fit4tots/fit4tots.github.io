@@ -1,0 +1,11 @@
+!!! 5
+%html(class="no-js" lang="en")
+  {% include layouts/head.html %}
+  %body
+    .wrapper-for-content-outside-of-footer
+      {% include layouts/refills/header.html %}
+
+      %main(role="main") {{ content }}
+
+    {% include layouts/refills/footer.html %}
+    {% include layouts/bottom.html %}
