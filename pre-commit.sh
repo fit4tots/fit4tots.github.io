@@ -6,7 +6,7 @@
 ### Are any Sass files canged and added?
 if git status -s | grep '^M.\+\.haml$'
 then
-  rake build
+  bundle exec rake build
   find . -type f -name "*.html" | grep -v "\_site" | xargs git add
 fi
 
