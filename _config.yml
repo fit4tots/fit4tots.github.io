@@ -14,5 +14,7 @@ timezone: Europe/London
 # Build settings
 markdown: kramdown
 
+exclude: ['*.html.haml', 'js/**/*', 'css/**/*', 'Gemfile', 'Gemfile.lock', 'pre-commit.sh', 'Rakefile', 'Guardfile', '*.sublime-project']
+
 sass:
   style: :compressed
