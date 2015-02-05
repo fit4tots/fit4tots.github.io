@@ -17,7 +17,7 @@ namespace :haml do
       convert path, File.dirname(path)
     end
 
-    puts 'Parsed haml index files'
+    puts 'Parsed all haml files'
   end
 
 end
