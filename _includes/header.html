@@ -1,0 +1,21 @@
+<header class='navigation' role='banner'>
+  <div class="navigation-wrapper">
+    <a href="{{ site.baseurl }}/" class="logo"><object
+       type="image/svg+xml" data="{{ site.baseurl }}/images/logo-outline.svg"></object></a>
+  
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        {% unless page.path == "index.html" %}
+          <li class="nav-link"><a href="{{ site.baseurl }}/">Home</a></li>
+        {% endunless %}
+        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Contact Us</a></li>
+        <ul class="header-social">
+          <li><a href="https://facebook.com/{{ site.facebook_username }}" target="_blank"><img src="{{ site.baseurl }}/images/facebook_circle.svg" alt="Facebook"></a></li>
+          <li class="nav-link"><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><img src="{{ site.baseurl }}/images/twitter_circle.svg" alt="Twitter"></a></li>
+        </ul>
+      </ul>
+    </nav>
+  </div>
+</header>
