@@ -519,6 +519,160 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_sass/app/layout.scss",
+			"settings":
+			{
+				"buffer_size": 2394,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_sass/vendor/foundation-5.5.1/components/_grid.scss",
+			"settings":
+			{
+				"buffer_size": 7759,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/layouts/footer.html.haml",
+			"settings":
+			{
+				"buffer_size": 220,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/social_icons.html.haml",
+			"settings":
+			{
+				"buffer_size": 415,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html.haml",
+			"settings":
+			{
+				"buffer_size": 2352,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_sass/app/foundation.scss",
+			"settings":
+			{
+				"buffer_size": 2392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/layouts/top_bar.html.haml",
+			"settings":
+			{
+				"buffer_size": 728,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_sass/vendor/foundation-5.5.1/components/_top-bar.scss",
+			"settings":
+			{
+				"buffer_size": 21401,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 113 files for \"large-right\"\n\n0 matches across 0 files\n",
+			"settings":
+			{
+				"buffer_size": 64,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "js/vendor.js",
+			"settings":
+			{
+				"buffer_size": 646,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/layouts/head.html.haml",
+			"settings":
+			{
+				"buffer_size": 938,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "fit4tots-jekyll.sublime-project",
+			"settings":
+			{
+				"buffer_size": 116,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Guardfile",
+			"settings":
+			{
+				"buffer_size": 1465,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/default.html.haml",
+			"settings":
+			{
+				"buffer_size": 378,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/layouts/bottom.html.haml",
+			"settings":
+			{
+				"buffer_size": 367,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Rakefile",
+			"settings":
+			{
+				"buffer_size": 787,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 791,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/app.scss",
+			"settings":
+			{
+				"buffer_size": 394,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_sass/app/_foundation_settings.scss",
+			"settings":
+			{
+				"buffer_size": 50956,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -561,40 +715,75 @@
 	"expanded_folders":
 	[
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll",
-		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_layouts"
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/app",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_site"
 	],
 	"file_history":
 	[
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/.sass-cache/949faac1af9066e072b0cbcfaed29c92df619767/_grid.scssc",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/Gemfile.lock",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor/foundation-5.5.1/_settings.orig.scss",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/.sass-cache/ed92b44f726b1f1470ab7c294c07aea73238c516/_selection.scssc",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor/foundation-5.5.1/_functions.scss",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/.sass-cache/949faac1af9066e072b0cbcfaed29c92df619767/_top-bar.scssc",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor/foundation-5.5.1/components/_top-bar.scss",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/images/twitter_circle.svg",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/refills/footer.html.haml",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/.sass-cache/9898430bcbbbae391d576ebc8d7f10a0b228bc2a/_linear-angle-parser.scssc",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/images/logo.svg",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_config_dev.yml",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/js/app/global.coffee",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/head.html",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/app/global.scss",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/refills/footer.scss",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor/normalize.scss",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/css/app.scss",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/app/layout.scss",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_layouts/default.html.haml",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/fit4tots-jekyll.sublime-project",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/refills/navigation.scss",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_layouts/default.html",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_site/js/app.js",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/pre-commit.sh",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/contact_us/index.html.haml",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/Rakefile",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/index.html.haml",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_config.yml",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_site/css/app.css",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_site/js/vendor.js",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/contact_us/index.html",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_site/Rakefile",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_site/pre-commit.sh",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/head.html.haml",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_layouts/page.html.haml",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_layouts/page.html",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_site/about/index.html",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_layouts/post.html.haml",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/Gemfile",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_layouts/post.html",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/index.html",
+		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_posts/2015-01-14-welcome-to-jekyll.markdown",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/Guardfile",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/refills/header.html.haml",
-		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_layouts/default.html.haml",
-		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/refills/footer.html.haml",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/bottom.html.haml",
-		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_config.yml",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_plugins/jekyll-slim.rb",
-		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_layouts/default.html",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/bottom.slim",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_site/index.html",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/refills/header.html.slim",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/index.slim",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/refills/footer.html",
-		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/index.html",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/refills/header.html",
-		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/css/app.scss",
-		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/app/layout.scss",
-		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/refills/navigation.scss",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/js/refills/navigation.coffee",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/js/app.coffee",
-		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor/normalize.scss",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/app/variables.scss",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor/bitters-1.0.0/base/_variables.scss",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor/bourbon-4.1.1/settings/_px-to-em.scss",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor/bourbon-4.1.1/_bourbon.scss",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor/bitters-1.0.0/base/_grid-settings.scss",
-		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/images/logo.svg",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/header.html",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_includes/layouts/footer.html",
 		"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/app/typography.scss",
@@ -662,47 +851,18 @@
 		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/layouts/responsive/_off_canvas_menu.html.slim",
 		"/Volumes/MBP_Data/Dev/wct/greenplantswap/spec/models/receipt_spec.rb",
 		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/message_mailer/reply_message_email.html.slim",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/config/routes.rb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/spec/features/user_registration_spec.rb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/assets/stylesheets/shared/icons.scss",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/mailers/batch_notifications_mailer.rb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/layouts/email.html.slim",
-		"/Users/rick/Desktop/one.html",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/test/mailers/previews/batch_notification_mailer_preview.rb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/VERSION",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/layouts/email/_zurb_ink_styles.html.erb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/layouts/email/_zurb_ink_styles_roadie_ignored.html.erb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/config/initializers/roadie.rb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/garden_surveys/show/_plant_listing.html.slim",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/garden_surveys/sample.html.slim",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/plants/_stats_two.html.slim",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/layouts/garden_survey_site/_footer.html.slim",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/helpers/application_helper.rb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/garden_surveys/show/_garden_area.html.slim",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/cookbooks/postgresql/recipes/apt_pgdg_postgresql.rb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/garden_survey_site/main/summary.html.slim",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/config/locales/simple_form.en-GB.yml",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/test/performance/sitemaps_test.rb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/assets/stylesheets/sitemap.xsl",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/ssl/self_signed/sites-enabled_greenplantswap.development.example",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/spec/features/invite_user_spec.rb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/layouts/garden_survey_site/_header.html.slim",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/garden_survey_site/main/index.html.slim",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/assets/stylesheets/responsive/garden_survey_site/header.scss",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/layouts/garden_survey_site/_head.html.slim",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/assets/javascripts/garden_survey_site.js",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/models/ability.rb",
-		"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views/talk_comments/_talk_comment.html.slim"
+		"/Volumes/MBP_Data/Dev/wct/greenplantswap/config/routes.rb"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
 		"height": 102.0,
 		"where_history":
 		[
+			"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor",
 			"/Volumes/MBP_Data/Dev/wct/greenplantswap/spec",
 			"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor",
 			"/Volumes/MBP_Data/Dev/wct/fit4tots-jekyll/_sass/vendor/bourbon-4.1.1",
@@ -829,8 +989,7 @@
 			"/Volumes/MBP_Data/Dev/wct/greenplantswap/app",
 			"/Volumes/MBP_Data/Dev/wct/greenplantswap",
 			"/Volumes/MBP_Data/Dev/wct/greenplantswap/app",
-			"/Volumes/MBP_Data/Dev/wct/greenplantswap",
-			"/Volumes/MBP_Data/Dev/wct/greenplantswap/app/views"
+			"/Volumes/MBP_Data/Dev/wct/greenplantswap"
 		]
 	},
 	"find_state":
@@ -838,6 +997,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"grid",
+			"top-bar",
+			"medium",
+			"padding",
+			"height",
+			"social",
+			"fixed",
+			"\n    ",
+			"top-bar",
+			"white",
+			"hover",
+			"top-bar",
+			"global-radi",
+			"radius",
+			"border",
+			"}\n",
+			"large-right",
+			"large-up",
+			"nav",
+			"\"}\n",
+			"wrapper",
+			"do",
 			"\"",
 			"button",
 			"64",
@@ -943,29 +1124,7 @@
 			"sitemaps",
 			"robots",
 			"plants_offered",
-			"redcarp",
-			"markdown",
-			"a new comm",
-			"grower_profile",
-			"edit_grower",
-			"back",
-			"refer",
-			"scope",
-			"near",
-			"delay",
-			"about comments",
-			"routes",
-			"rabl",
-			"chart",
-			"comments",
-			"/ ",
-			"comments",
-			"_comments",
-			"garden_survey_path",
-			"submitted",
-			"admin_Show_",
-			"admin_Show",
-			"commit"
+			"redcarp"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1038,8 +1197,548 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_sass/app/layout.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1030,
+								1030
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2967.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_sass/vendor/foundation-5.5.1/components/_grid.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7759,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3745.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_includes/layouts/footer.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								7
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_includes/social_icons.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "index.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_sass/app/foundation.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1003,
+								1003
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 548.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_includes/layouts/top_bar.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 728,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								213
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "_sass/vendor/foundation-5.5.1/components/_top-bar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6795,
+								6816
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 32.0,
+						"translation.y": 8306.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 64,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "js/vendor.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 646,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								89,
+								89
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "_includes/layouts/head.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 938,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "fit4tots-jekyll.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 116,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Guardfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								425,
+								425
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 17.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "_layouts/default.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "_includes/layouts/bottom.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 367,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "Rakefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 787,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								226,
+								226
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								332,
+								332
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "css/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								371,
+								371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "_sass/app/_foundation_settings.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 50956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2071,
+								2085
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2027.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1093,6 +1792,46 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"grid",
+				"_sass/vendor/foundation-5.5.1/components/_grid.scss"
+			],
+			[
+				"settings",
+				"_sass/app/_foundation_settings.scss"
+			],
+			[
+				"foundation-settings",
+				"_sass/vendor/foundation-5.5.1/_settings.orig.scss"
+			],
+			[
+				"footer",
+				"_includes/layouts/footer.html.haml"
+			],
+			[
+				"top",
+				"_sass/vendor/foundation-5.5.1/components/_top-bar.scss"
+			],
+			[
+				"top-bar",
+				"_sass/vendor/foundation-5.5.1/components/_top-bar.scss"
+			],
+			[
+				"layout",
+				"_sass/app/layout.scss"
+			],
+			[
+				"foundat",
+				"_sass/app/foundation.scss"
+			],
+			[
+				"bottom",
+				"_includes/layouts/bottom.html.haml"
+			],
+			[
+				"bott",
+				"_includes/layouts/bottom.html.haml"
+			],
 			[
 				"nor",
 				"_sass/vendor/normalize.scss"
@@ -1260,10 +1999,6 @@
 			[
 				"gardsulayout",
 				"app/assets/stylesheets/responsive/garden_survey_site/layout.scss"
-			],
-			[
-				"layout",
-				"app/helpers/layouts_helper.rb"
 			],
 			[
 				"contacussi",
@@ -1568,42 +2303,6 @@
 			[
 				"structu",
 				"db/structure.sql"
-			],
-			[
-				"surside",
-				"app/views/garden_surveys/show/_sidebar.html.slim"
-			],
-			[
-				"gardnsura",
-				"app/models/garden_survey_area.rb"
-			],
-			[
-				"gardsue",
-				"app/models/garden_survey.rb"
-			],
-			[
-				"nginx",
-				"ssl/self_signed/nginx.conf.example"
-			],
-			[
-				"custom_sttoor",
-				"app/controllers/spree/custom_store_controller.rb"
-			],
-			[
-				"fixedbott",
-				"app/views/layouts/fixed/_bottom.html.slim"
-			],
-			[
-				"footer",
-				"app/views/layouts/responsive/_footer.html.slim"
-			],
-			[
-				"webapp",
-				"config/deploy/recipes/web_app.rb"
-			],
-			[
-				"book_g",
-				"spec/features/book_garden_survey_spec.rb"
 			]
 		],
 		"width": 0.0
@@ -1632,7 +2331,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 301.0,
+	"side_bar_width": 340.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

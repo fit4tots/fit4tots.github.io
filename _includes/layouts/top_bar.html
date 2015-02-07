@@ -1,4 +1,4 @@
-<a class="fixed" href="{{ '/' | prepend: site.baseurl }}" id="nav_logo">
+<a href="{{ '/' | prepend: site.baseurl }}" id="nav_logo">
   <img src="{{ '/images/logo-outline.svg' | prepend: site.baseurl }}">
 </a>
 <div class="sticky">
@@ -22,18 +22,7 @@
           <a href="{{ '/contact_us' | prepend: site.baseurl }}">Contact us</a>
         </li>
       </ul>
-      <ul class="social right">
-        <li>
-          <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
-            <img alt="Facebook" src="{{ '/images/facebook_circle.svg' | prepend: site.baseurl }}">
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-            <img alt="Facebook" src="{{ '/images/twitter_circle.svg' | prepend: site.baseurl }}">
-          </a>
-        </li>
-      </ul>
+      {% include social_icons.html %}
     </section>
   </nav>
 </div>

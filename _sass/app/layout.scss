@@ -13,9 +13,7 @@
 $logo_width: rem-calc(96);
 
 a#nav_logo {
-  @media #{$small-only} {
-    position: absolute !important;
-  }
+  position: absolute;
 
   line-height: 0;
   display: block;
@@ -42,20 +40,97 @@ a#nav_logo {
 nav.top-bar {
   @media #{$medium-up} {
     .top-bar-section {
-      margin-left: $logo_width + rem-calc(32) !important;
+      margin: 0 ($column-gutter / 2) 0 ($logo_width + ($column-gutter / 2)) !important;
     }
   }
+}
 
-  ul.social img {
-    width: rem-calc(32);
-    border-radius: $global-rounded;
-    border: 0;
-    background-color: $white;
+/// Sticky Footer styles
+$medium-footer-height: rem-calc(50);
+$small-footer-height: rem-calc(400);
+
+body > .off-canvas-wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+
+  margin-bottom: -$small-footer-height;
+  > .inner-wrap { padding-bottom: $small-footer-height; }
+
+  @media #{$medium-up} {
+    margin-bottom: -$medium-footer-height;
+    > .inner-wrap { padding-bottom: $medium-footer-height; }
+  }
+}
+
+body > footer {
+  height: $small-footer-height;
+  margin-top: $column-gutter;
+
+  @media #{$small-only} { height: $small-footer-height; }
+  @media #{$medium-up} { height: $medium-footer-height; }
+
+  background: $f4t_orange;
+  min-height: $topbar-height * 2;
+  padding-top: ($topbar-height / 2);
+
+  &, a, a:hover { color: $white; }
+  a:hover { text-decoration: underline; }
+
+  ul.left, ul.right {
+    @include inline-list;
+  }
+
+  nav {
+    margin: 0 ($column-gutter / 2);
   }
 }
 
 body > div > div > main {
   padding-top: $logo_width - $topbar-height + rem-calc(16);
+}
+
+@media #{$small-only} {
+  .top-bar-section ul li {
+    text-align: right;
+    > a {
+      padding-left: 0;
+      padding-right: $topbar-link-padding;
+    }
+  }
+}
+
+.social-icons {
+  list-style-type: none;
+  footer & {
+    float: right;
+    li { float: left; }
+    a { padding: 0 0 0 $topbar-link-padding; }
+  }
+
+  @media #{$medium-up} {
+    float: right;
+    li { float: left; }
+    a { padding: 0 0 0 $topbar-link-padding !important; }
+  }
+
+  svg, img, object {
+    width: rem-calc(32);
+    height: rem-calc(32);
+    display: inline-block;
+    vertical-align: middle;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  nav.top-bar & a:not(:hover) svg {
+    circle { fill: #000; }
+    path { fill: $gainsboro; }
+  }
+  a {
+    z-index: 1;
+    text-decoration: none;
+  }
 }
 
 #environment {
@@ -64,7 +139,7 @@ body > div > div > main {
   right: 0;
   text-align: center;
   padding: rem-calc(12);
-  background-color: rgb(246, 139,  31);
+  background-color: #3CB371;
   border-top-left-radius: $global-radius * 2;
   color: #fff;
   font-size: rem-calc(12);
