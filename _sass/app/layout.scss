@@ -86,8 +86,11 @@ body > footer {
   }
 }
 
+
 body > div > div > main {
-  padding-top: $logo_width - $topbar-height + rem-calc(16);
+  @media #{$small-only} {
+    padding-top: $logo_width - $topbar-height + rem-calc(16);
+  }
 }
 
 @media #{$small-only} {
