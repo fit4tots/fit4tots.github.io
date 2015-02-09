@@ -46,7 +46,8 @@ nav.top-bar {
 }
 
 /// Sticky Footer styles
-$medium-footer-height: rem-calc(50);
+$footer-margin-top: $column-gutter;
+$medium-footer-height: rem-calc(80);
 $small-footer-height: rem-calc(400);
 
 body > .off-canvas-wrap {
@@ -54,24 +55,23 @@ body > .off-canvas-wrap {
   height: auto !important;
   height: 100%;
 
-  margin-bottom: -$small-footer-height;
+  margin-bottom: -1 * ($small-footer-height + $footer-margin-top);
   > .inner-wrap { padding-bottom: $small-footer-height; }
 
   @media #{$medium-up} {
-    margin-bottom: -$medium-footer-height;
+    margin-bottom: -1 * ($medium-footer-height + $footer-margin-top);
     > .inner-wrap { padding-bottom: $medium-footer-height; }
   }
 }
 
 body > footer {
   height: $small-footer-height;
-  margin-top: $column-gutter;
+  margin-top: $footer-margin-top;
 
   @media #{$small-only} { height: $small-footer-height; }
   @media #{$medium-up} { height: $medium-footer-height; }
 
   background: $f4t_orange;
-  min-height: $topbar-height * 2;
   padding-top: ($topbar-height / 2);
 
   &, a, a:hover { color: $white; }
