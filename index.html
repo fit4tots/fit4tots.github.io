@@ -15,14 +15,14 @@ layout: default
     Fit4Tots classes offer a broad range of sports and fitness activities for children from 2 to 7 years old. Children get to try out and build skills for a variety of sports in a fun and varied environment. We offer classes in schools, nurseries and community venues and  build a foundation of healthy fitness habits through sport, games, music and movement.
   </p>
 </div>
-{% assign default_tr = 'w_600,c_scale/w_600,h_600,c_crop,g_north' %}
-{% assign medium_tr = 'w_270,c_scale/w_270,h_180,c_crop,g_north' %}
+{% assign default_tr = 'w_600,c_scale/w_600,h_600,c_crop,g_north,f_auto' %}
+{% assign medium_tr = 'w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto' %}
 <div class="row">
   <div class="medium-4 columns">
     <div class="panel">
       <h3>Schools</h3>
       <p>We run fun fitness and multi skills classes for key stage 1</p>
-      {% assign img = '/v1423504205/school_photo_i3dfqb.jpg' %}
+      {% assign img = '/v1423504205/school_photo_i3dfqb' %}
       <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
     </div>
   </div>
@@ -30,7 +30,7 @@ layout: default
     <div class="panel">
       <h3>Nurseries</h3>
       <p>Fun fitness and sports classes for pre-schoolers</p>
-      {% assign img = '/v1423504239/girls_dancing_zsjdy8.jpg' %}
+      {% assign img = '/v1423504239/girls_dancing_zsjdy8' %}
       <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
     </div>
   </div>
@@ -38,7 +38,7 @@ layout: default
     <div class="panel">
       <h3>Parents</h3>
       <p>Join in some fitness fun with your little one</p>
-      {% assign img = '/v1423504229/small_boy_with_gymball_qujwmr.jpg' %}
+      {% assign img = '/v1423504229/small_boy_with_gymball_qujwmr' %}
       <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
     </div>
   </div>
