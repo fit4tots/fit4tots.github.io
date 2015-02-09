@@ -1,3 +1,5 @@
+// Foundation tweaks
+
 @media #{$medium-up} {
   .medium-right {
     float: right !important;
@@ -9,6 +11,12 @@
     float: right !important;
   }
 }
+
+.panel.callout {
+  margin-top: 1px;
+}
+
+// Layout
 
 $logo_width: rem-calc(96);
 
