@@ -12,8 +12,12 @@
   }
 }
 
-.panel.callout {
-  margin-top: 1px;
+.panel {
+  &, img { border-radius: $global-radius; }
+
+  &.callout {
+    margin-top: 1px;
+  }
 }
 
 // Layout
@@ -55,7 +59,7 @@ nav.top-bar {
 
 /// Sticky Footer styles
 $medium-footer-height: rem-calc(80);
-$small-footer-height: rem-calc(80);
+$small-footer-height: rem-calc(110);
 
 body > .off-canvas-wrap {
   min-height: 100%;
@@ -96,8 +100,12 @@ body > footer {
 
 
 body > div > div > main {
+  $main_padding: $logo_width - $topbar-height + rem-calc(16);
   @media #{$small-only} {
-    padding-top: $logo_width - $topbar-height + rem-calc(16);
+    padding-top: $main_padding;
+  }
+  @media #{$medium-only} {
+    padding-top: $main_padding;
   }
 }
 

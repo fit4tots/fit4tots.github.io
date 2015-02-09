@@ -10,7 +10,7 @@ baseurl: "/fit4tots-jekyll" # the subpath of your site, e.g. /blog/
 url: "http://wildcountry.github.io" # the base hostname & protocol for your site
 twitter_username: fit4tots
 facebook_username: fit4totsUK
-cloudinary_prefix: http://res.cloudinary.com/fit4tots/image/upload/
+cloudinary_prefix: "http://res.cloudinary.com/fit4tots/image/upload"
 timezone: Europe/London
 
 environment: production

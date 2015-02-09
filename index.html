@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<h1 class="text-center">Making Sport &amp; Fitness Fun</h1>
-{% assign img = ',c_scale,f_auto/v1423497930/kids_jumping_qyzyvb' %}
-<img alt="kids jumping" data-interchange="[{{ 'w_980' | prepend: site.cloudinary_prefix | append: img }} (default)],[{{ 'w_600' | prepend: site.cloudinary_prefix | append: img }} (small-only)]">
+<h1 class="text-center">
+  Making Sport &amp;
+  <br class="show-for-small-only">
+  Fitness Fun
+</h1>
+{% assign img = '' %}
+<img alt="kids jumping" data-interchange="[{{ '/c_scale,f_auto,w_980/v1423519271/kids_jumping_cdmq4q.jpg' | prepend: site.cloudinary_prefix }} (default)],[{{ '/c_scale,f_auto,w_600/v1423519106/kids_jumping2_q5zwh9' | prepend: site.cloudinary_prefix }} (small-only)]">
 <div class="panel callout">
   <p>
     Our aim is to make fitness and sport fun and build healthy habits for life.
@@ -15,14 +19,14 @@ layout: default
     Fit4Tots classes offer a broad range of sports and fitness activities for children from 2 to 7 years old. Children get to try out and build skills for a variety of sports in a fun and varied environment. We offer classes in schools, nurseries and community venues and  build a foundation of healthy fitness habits through sport, games, music and movement.
   </p>
 </div>
-{% assign default_tr = 'w_600,c_scale/w_600,h_600,c_crop,g_north,f_auto' %}
-{% assign medium_tr = 'w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto' %}
+{% assign default_tr = '/w_600,c_scale/w_600,h_600,c_crop,g_north,f_auto' %}
+{% assign medium_tr = '/w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto' %}
 <div class="row">
   <div class="medium-4 columns">
     <div class="panel">
       <h3>Schools</h3>
-      <p>We run fun fitness and multi skills classes for key stage 1</p>
-      {% assign img = '/v1423504205/school_photo_i3dfqb' %}
+      <p>We run fitness and multi skills classes for KS1</p>
+      {% assign img = '/v1423519123/school_photo_kbozdy' %}
       <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
     </div>
   </div>
@@ -30,7 +34,7 @@ layout: default
     <div class="panel">
       <h3>Nurseries</h3>
       <p>Fun fitness and sports classes for pre-schoolers</p>
-      {% assign img = '/v1423504239/girls_dancing_zsjdy8' %}
+      {% assign img = '/v1423519084/girls_dancing_tabj5k.jpg' %}
       <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
     </div>
   </div>
@@ -38,7 +42,7 @@ layout: default
     <div class="panel">
       <h3>Parents</h3>
       <p>Join in some fitness fun with your little one</p>
-      {% assign img = '/v1423504229/small_boy_with_gymball_qujwmr' %}
+      {% assign img = '/v1423519118/small_boy_with_gymball_vbfab7' %}
       <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
     </div>
   </div>

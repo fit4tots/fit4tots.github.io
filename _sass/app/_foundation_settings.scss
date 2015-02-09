@@ -145,7 +145,7 @@ $secondary-color: $f4t_orange;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
+$global-radius: 5px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -161,6 +161,15 @@ $secondary-color: $f4t_orange;
 // $large-range: (64.063em, 90em);
 // $xlarge-range: (90.063em, 120em);
 // $xxlarge-range: (120.063em, 99999999em);
+
+$base-em: 1em / strip-unit($rem-base);
+$max-em: 99999999em;
+
+$small-range: (0em, 666*$base-em);
+$medium-range: (667*$base-em, 1023*$base-em);  // 667 - iPhone6 landscape
+$large-range: (1024*$base-em, 1279*$base-em); // 1024 - iPad landscape
+$xlarge-range: (1280*$base-em, $max-em); // 1280 - Samsung Galaxy Note landscape
+$xxlarge-range: ($max-em, $max-em);
 
 // $screen: "only screen";
 
