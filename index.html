@@ -7,7 +7,7 @@ layout: default
   Fitness Fun
 </h1>
 <img data-interchange="[{{ '/c_scale,f_auto,w_980/v1423519271/kids_jumping_cdmq4q.jpg' | prepend: site.cloudinary_prefix }} (default)],[{{ '/c_scale,f_auto,w_600/v1423519106/kids_jumping2_q5zwh9' | prepend: site.cloudinary_prefix }} (small-only)]">
-<div class="panel callout">
+<div class="panel callout" id="about_us">
   <p>
     Our aim is to make fitness and sport fun and build healthy habits for life.
   </p>
@@ -21,7 +21,7 @@ layout: default
 {% assign default_tr = '/w_600,c_scale/w_600,h_600,c_crop,g_north,f_auto' %}
 {% assign medium_tr = '/w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto' %}
 <div class="row">
-  <div class="medium-4 columns">
+  <div class="medium-4 columns" id="schools">
     <div class="panel">
       <h3>Schools</h3>
       <p>We run fitness and multi skills classes for KS1</p>
@@ -29,7 +29,7 @@ layout: default
       <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
     </div>
   </div>
-  <div class="medium-4 columns">
+  <div class="medium-4 columns" id="nurseries">
     <div class="panel">
       <h3>Nurseries</h3>
       <p>Fun fitness and sports classes for pre-schoolers</p>
@@ -37,15 +37,31 @@ layout: default
       <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
     </div>
   </div>
-  <div class="medium-4 columns">
+  <div class="medium-4 columns" id="parents">
     <div class="panel">
       <h3>Parents</h3>
       <p>Join in some fitness fun with your little one</p>
-      {% assign img = '/v1423519118/small_boy_with_gymball_vbfab7' %}
+      {% assign img = '/v1423568695/IMG_4392_lpgcf6' %}
       <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
     </div>
   </div>
 </div>
-<div class="panel">
-  Where we are
+<div class="panel text-center" id="location">
+  <h3>Where we are</h3>
+  <img src="{{ 'images/uk_map.svg' | prepend: site.baseurl }}">
+</div>
+<div class="panel" id="contact_us">
+  <h3>What to find out more?</h3>
+  <div class="row">
+    <div class="small-6 columns">
+      Email
+      <a href="mailto:info@fit4tots.com">info@fit4tots.com</a>
+    </div>
+    <div class="small-6 columns">
+      <div class="right">
+        Call Lesley
+        <a href="tel:07875026420">07875026420</a>
+      </div>
+    </div>
+  </div>
 </div>

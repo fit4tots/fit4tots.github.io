@@ -8,9 +8,9 @@
   %br.show-for-small-only
   Fitness Fun
 
-%img(data-interchange="[{{ '/c_scale,f_auto,w_980/v1423519271/kids_jumping_cdmq4q.jpg' | prepend: site.cloudinary_prefix }} (default)],[{{ '/c_scale,f_auto,w_600/v1423519106/kids_jumping2_q5zwh9' | prepend: site.cloudinary_prefix }} (small-only)]")
+%img{ data: {interchange: "[{{ '/c_scale,f_auto,w_980/v1423519271/kids_jumping_cdmq4q.jpg' | prepend: site.cloudinary_prefix }} (default)],[{{ '/c_scale,f_auto,w_600/v1423519106/kids_jumping2_q5zwh9' | prepend: site.cloudinary_prefix }} (small-only)]"}}
 
-.panel.callout
+#about_us.panel.callout
   %p
     Our aim is to make fitness and sport fun and build healthy habits for life.
 
@@ -25,28 +25,40 @@
 {% assign medium_tr = '/w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto' %}
 
 .row
-  .medium-4.columns
+  #schools.medium-4.columns
     .panel
       %h3 Schools
       %p We run fitness and multi skills classes for KS1
 
       {% assign img = '/v1423519123/school_photo_kbozdy' %}
-      %img(data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]")
+      %img{data: { interchange: "[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]"}}
 
-  .medium-4.columns
+  #nurseries.medium-4.columns
     .panel
       %h3 Nurseries
       %p Fun fitness and sports classes for pre-schoolers
 
       {% assign img = '/v1423519084/girls_dancing_tabj5k.jpg' %}
-      %img(data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]")
+      %img{data: { interchange: "[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]"}}
 
-  .medium-4.columns
+  #parents.medium-4.columns
     .panel
       %h3 Parents
       %p Join in some fitness fun with your little one
-      {% assign img = '/v1423519118/small_boy_with_gymball_vbfab7' %}
-      %img(data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]")
+      {% assign img = '/v1423568695/IMG_4392_lpgcf6' %}
+      %img{data: { interchange: "[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]"}}
 
-.panel
-  Where we are
+#location.panel.text-center
+  %h3 Where we are
+  %img{src: "{{ 'images/uk_map.svg' | prepend: site.baseurl }}"}
+
+#contact_us.panel
+  %h3 What to find out more?
+  .row
+    .small-6.columns
+      Email
+      %a(href="mailto:info@fit4tots.com") info@fit4tots.com
+    .small-6.columns
+      .right
+        Call Lesley
+        %a(href="tel:07875026420")07875026420

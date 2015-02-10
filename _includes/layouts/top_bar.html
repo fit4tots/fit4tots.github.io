@@ -18,9 +18,17 @@
           <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
         </li>
         {% endunless %}
-        <li class="{% if page.path contains 'contact_us' %}{{ 'active'}}{% endif %}">
-          <a href="{{ '/contact_us' | prepend: site.baseurl }}">Contact us</a>
+        {% assign links = 'contact_us|schools|nurseries|parents' | split: '|' %}
+        {% for link in links %}
+        {%   assign text = link | capitalize | split: '_' %}
+        <li class="{% if page.path contains link %}{{ 'active'}}{% endif %}">
+          <a data-slide-to="" href="#{{link}}">
+            {% for word in text %}
+            {{   word || capitalize }}
+            {% endfor %}
+          </a>
         </li>
+        {% endfor %}
       </ul>
       {% include social_icons.html %}
     </section>
