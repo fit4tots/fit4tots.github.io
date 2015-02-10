@@ -4,7 +4,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_newlines }}{% endif %}" name="description">
-  <link href="{{ '/css/app.css' | prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{ '/css/app.css' | prepend: site.baseurl }}" media="all" rel="stylesheet">
+  <link href="{{ '/css/print.css' | prepend: site.baseurl }}" media="print" rel="stylesheet">
   <link href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}" rel="canonical">
   <link href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" rel="alternate" title="{{ site.title }}" type="application/rss+xml">
   <script charset="utf-8" src="{{ '/js/modernizr-2.8.3.min.js' | prepend: site.baseurl }}"></script>

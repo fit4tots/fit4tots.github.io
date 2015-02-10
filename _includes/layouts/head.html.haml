@@ -8,7 +8,12 @@
   %meta{name: "description",
         content: "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_newlines }}{% endif %}" }
 
-  %link{rel: 'stylesheet', href: "{{ '/css/app.css' | prepend: site.baseurl }}"}
+  %link{rel: 'stylesheet', media: 'all',
+        href: "{{ '/css/app.css' | prepend: site.baseurl }}"}
+
+  %link{rel: 'stylesheet', media: 'print',
+        href: "{{ '/css/print.css' | prepend: site.baseurl }}"}
+
 
   %link{rel: 'canonical', href: "{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}" }
 
