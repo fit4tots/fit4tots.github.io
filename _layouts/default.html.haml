@@ -11,25 +11,19 @@
           %img{src: "{{ '/images/logo-outline.svg' | prepend: site.baseurl }}" }
         {% endcapture %}
 
-        .show-for-small-only {{ nav_logo }}
+        %header.row
+          .medium-2.large-2.columns {{ nav_logo }}
 
-        %main(role="main")
-          %header.row
-            .medium-3.large-2.columns.show-for-medium-up
-              {{ nav_logo }}
+          {% unless page.title == null %}
+          .medium-10.large-8.columns.end
+            %h1 {{ page.title}}
+          {% endunless %}
 
-            {% unless page.title == null %}
-            .medium-9.large-8.columns.end
-              %h1.small-only-text-center.large-text-center {{ page.title}}
-            {% endunless %}
+          .large-2.columns.show-for-large-up
+            .right {{ nav_logo }}
 
-            .large-2.columns.show-for-large-up
-              .right
-                {{ nav_logo }}
-
-          .row
-            .columns
-              {{ content }}
+        %main.row(role="main")
+          .columns {{ content }}
 
         %a.exit-off-canvas
 

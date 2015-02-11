@@ -6,6 +6,12 @@
   }
 }
 
+@media #{$medium-only} {
+  h1 {
+    font-size: $h1-font-size - ($h1-font-reduction / 2);
+  }
+}
+
 @media #{$medium-up} {
   .medium-right {
     float: right !important;
@@ -35,11 +41,12 @@
 // Layout
 
 $logo_width: rem-calc(96);
+$logo_top: rem-calc(8);
 
 a#nav_logo {
   @media #{$small-only} {
     position: absolute;
-    top: rem-calc(8);
+    top: $logo_top;
     left: rem-calc(16);
   }
 
@@ -102,13 +109,19 @@ body > footer {
 // end sticky footer
 
 
-body > div > div > main {
-  padding-top: rem-calc(16);
+body > .off-canvas-wrap > .inner-wrap {
+  > header {
+    padding-top: rem-calc(16);
 
-  $extra_padding: $logo_width - $topbar-height + rem-calc(8);
+    @media #{$small-only} {
+      .columns { position: static; }
+      padding-top: $logo_width + $logo_top - $topbar-height;
+    }
 
-  @media #{$small-only} {
-    padding-top: $extra_padding;
+    h1 {
+      @media #{$small-only} { text-align: center; }
+      @media #{$large-up} { text-align: center; }
+    }
   }
 }
 
