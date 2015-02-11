@@ -64,7 +64,7 @@ excerpt: Our aim is to make fitness and sport fun and build healthy habits for l
     <div class="small-6 columns">
       <div class="right">
         Call Lesley
-        <a href="tel:{{site.telephone}}">{{site.telephone}}</a>
+        <a href="tel:{{site.telephone | replace: ' ', '' | replace: '-', '' }}">{{site.telephone}}</a>
       </div>
     </div>
   </div>

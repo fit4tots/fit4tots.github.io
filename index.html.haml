@@ -63,4 +63,4 @@
     .small-6.columns
       .right
         Call Lesley
-        %a(href="tel:{{site.telephone}}") {{site.telephone}}
+        %a(href="tel:{{site.telephone | replace: ' ', '' | replace: '-', '' }}") {{site.telephone}}
