@@ -45,9 +45,14 @@
       %img{data: { interchange: "[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]"}}
 
 #location
-  .panel.text-center
+  .panel
     %h3 Where we are
-    %img{src: "{{ '/images/uk_map.svg' | prepend: site.baseurl }}"}
+    .row
+      .medium-8.columns
+        Our classes take place in Bristol and North Somerset
+
+      .medium-4.columns
+        %img{src: "{{ '/images/uk_map.svg' | prepend: site.baseurl }}"}
 
 #contact_us.panel
   %h3 What to find out more?
