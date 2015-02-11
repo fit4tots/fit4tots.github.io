@@ -1,0 +1,9 @@
+---
+---
+User-Agent: *
+
+{{ site.url }}
+{{ site.host }}
+{% unless site.url contains site.host %}
+Disallow: /
+{% endunless %}
