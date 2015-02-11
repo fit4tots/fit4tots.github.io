@@ -124,18 +124,6 @@ body > div > div > main {
 
 .social-icons {
   list-style-type: none;
-  footer & {
-    float: right;
-    li { float: left; }
-    margin-bottom: 0;
-    a { padding: 0 0 0 $topbar-link-padding; }
-  }
-
-  .top-bar & {
-    float: right;
-    li { float: left; }
-    a { padding: 0 $topbar-link-padding 0 0 !important; }
-  }
 
   svg, img, object {
     width: rem-calc(32);
@@ -146,13 +134,29 @@ body > div > div > main {
     pointer-events: none;
   }
 
-  nav.top-bar & a:not(:hover) svg {
-    circle { fill: #000; }
-    path { fill: $gainsboro; }
-  }
   a {
     z-index: 1;
     text-decoration: none;
+  }
+
+  footer & {
+    float: right;
+    li { float: left; }
+    margin-bottom: 0;
+    a { padding: 0 0 0 $topbar-link-padding; }
+  }
+
+  nav.top-bar & {
+    @media #{$medium-up} {
+      float: right;
+      li { float: left; }
+      a { padding: 0 $topbar-link-padding 0 0 !important; }
+    }
+
+    a:not(:hover) svg {
+      circle { fill: #000; }
+      path { fill: $gainsboro; }
+    }
   }
 }
 
