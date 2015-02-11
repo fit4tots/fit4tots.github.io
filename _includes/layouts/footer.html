@@ -1,13 +1,17 @@
 <footer role="contentinfo">
-  <nav>
-    <ul class="left">
-      <li>
-        <a data-slide-to="" href="#about_us">About Us</a>
-      </li>
-    </ul>
-    {% include social_icons.html %}
-    <ul class="right">
-      <li>&copy; {{ site.title }} {{ site.time | date: '%Y' }}</li>
-    </ul>
-  </nav>
+  <div class="row">
+    <div class="columns">
+      <nav>
+        <ul class="left">
+          <li>
+            <a data-slide-to="" href="#about_us">About Us</a>
+          </li>
+        </ul>
+        {% include social_icons.html %}
+        <ul class="right">
+          <li>&copy; {{ site.title }} {{ site.time | date: '%Y' }}</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </footer>

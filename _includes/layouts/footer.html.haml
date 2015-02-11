@@ -1,10 +1,12 @@
 %footer(role="contentinfo")
-  %nav
-    %ul.left
-      %li
-        %a{data: { slide_to: ''}, href: '#about_us'} About Us
+  .row
+    .columns
+      %nav
+        %ul.left
+          %li
+            %a{data: { slide_to: ''}, href: '#about_us'} About Us
 
-    {% include social_icons.html %}
+        {% include social_icons.html %}
 
-    %ul.right
-      %li &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+        %ul.right
+          %li &copy; {{ site.title }} {{ site.time | date: '%Y' }}

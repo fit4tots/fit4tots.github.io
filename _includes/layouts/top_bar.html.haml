@@ -1,8 +1,5 @@
-%a#nav_logo{href: "{{ '/' | prepend: site.baseurl }}"}
-  %img{src: "{{ '/images/logo-outline.svg' | prepend: site.baseurl }}" }
-
-.sticky
-  %nav.top-bar(data-topbar role='navigation' data-options='sticky_on: medium')
+.sticky.contain-to-grid
+  %nav.top-bar(data-topbar role='navigation' data-options='sticky_on:[medium,large,xlarge,xxlarge]')
     %ul.title-area
       %li.name
       %li.toggle-topbar

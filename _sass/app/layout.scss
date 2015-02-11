@@ -1,14 +1,26 @@
 // Foundation tweaks
 
+@media #{$small-only} {
+  .small-only-text-center {
+    text-align: center;
+  }
+}
+
 @media #{$medium-up} {
   .medium-right {
     float: right !important;
+  }
+  .medium-text-center {
+    text-align: center;
   }
 }
 
 @media #{$large-up} {
   .large-right {
     float: right !important;
+  }
+  .large-text-center {
+    text-align: center;
   }
 }
 
@@ -25,12 +37,14 @@
 $logo_width: rem-calc(96);
 
 a#nav_logo {
-  position: absolute;
+  @media #{$small-only} {
+    position: absolute;
+    top: rem-calc(8);
+    left: rem-calc(16);
+  }
 
   line-height: 0;
   display: block;
-  top: rem-calc(8);
-  left: rem-calc(16);
   z-index: 100;
 
   img {
@@ -49,17 +63,9 @@ a#nav_logo {
   }
 }
 
-nav.top-bar {
-  @media #{$medium-up} {
-    .top-bar-section {
-      margin: 0 ($column-gutter / 2) 0 ($logo_width + ($column-gutter / 2)) !important;
-    }
-  }
-}
-
 /// Sticky Footer styles
-$medium-footer-height: rem-calc(80);
-$small-footer-height: rem-calc(110);
+$medium-footer-height: $topbar-height + $topbar-link-padding;
+$small-footer-height: $medium-footer-height * 1.5;
 
 body > .off-canvas-wrap {
   min-height: 100%;
@@ -84,7 +90,7 @@ body > footer {
   @media #{$medium-up} { height: $medium-footer-height; }
 
   background: $f4t_orange;
-  padding-top: ($topbar-height / 2);
+  padding: $topbar-link-padding 0;
 
   &, a, a:hover { color: $white; }
   a:hover { text-decoration: underline; }
@@ -92,11 +98,8 @@ body > footer {
   ul.left, ul.right {
     @include inline-list;
   }
-
-  nav {
-    margin: 0 ($column-gutter / 2);
-  }
 }
+// end sticky footer
 
 
 body > div > div > main {
@@ -105,9 +108,6 @@ body > div > div > main {
   $extra_padding: $logo_width - $topbar-height + rem-calc(8);
 
   @media #{$small-only} {
-    padding-top: $extra_padding;
-  }
-  @media #{$medium-only} {
     padding-top: $extra_padding;
   }
 }
@@ -127,13 +127,14 @@ body > div > div > main {
   footer & {
     float: right;
     li { float: left; }
+    margin-bottom: 0;
     a { padding: 0 0 0 $topbar-link-padding; }
   }
 
-  @media #{$medium-up} {
+  .top-bar & {
     float: right;
     li { float: left; }
-    a { padding: 0 0 0 $topbar-link-padding !important; }
+    a { padding: 0 $topbar-link-padding 0 0 !important; }
   }
 
   svg, img, object {

@@ -6,7 +6,27 @@
       .inner-wrap
         {% include layouts/top_bar.html %}
 
+        {% capture nav_logo %}
+        %a#nav_logo{href: "{{ '/' | prepend: site.baseurl }}"}
+          %img{src: "{{ '/images/logo-outline.svg' | prepend: site.baseurl }}" }
+        {% endcapture %}
+
+        .show-for-small-only {{ nav_logo }}
+
         %main(role="main")
+          %header.row
+            .medium-2.columns.show-for-medium-up
+              {{ nav_logo }}
+
+            {% unless page.title == null %}
+            .medium-10.large-8.columns.end
+              %h1.small-only-text-center.large-text-center {{ page.title}}
+            {% endunless %}
+
+            .large-2.columns.show-for-large-up
+              .right
+                {{ nav_logo }}
+
           .row
             .columns
               {{ content }}

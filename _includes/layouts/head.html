@@ -2,12 +2,8 @@
   <meta charset="utf-9">
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-  {% unless page.excerpt == null %}
-    <meta content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" name="description">
-  {% endunless %}
-
+  <title>{% if page.title %}{{ page.title | strip_html | strip_newlines | append: ' | ' | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_newlines }}{% endif %}" name="description">
   <link href="{{ '/css/app.css' | prepend: site.baseurl }}" media="all" rel="stylesheet">
   <link href="{{ '/css/print.css' | prepend: site.baseurl }}" media="print" rel="stylesheet">
   <link href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}" rel="canonical">
