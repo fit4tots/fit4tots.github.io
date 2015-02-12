@@ -60,7 +60,8 @@
     .small-6.columns
       Email
       %a(href="mailto:{{site.email}}") {{site.email}}
-    .small-6.columns
-      .right
-        Call Lesley
-        %a(href="tel:{{site.telephone | replace: ' ', '' | replace: '-', '' }}") {{site.telephone}}
+
+    -#.small-6.columns
+    -#  .right
+    -#    Call Lesley
+    -#    %a(href="tel:{{site.telephone | replace: ' ', '' | replace: '-', '' -#}}") {{site.telephone}}
