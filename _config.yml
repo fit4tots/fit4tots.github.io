@@ -9,7 +9,7 @@ twitter_username: fit4tots
 facebook_username: fit4totsUK
 cloudinary_prefix: 'http://res.cloudinary.com/fit4tots/image/upload'
 timezone: Europe/London
-
+google_analytics_code: UA-59713370-1
 environment: production
 
 # Build settings
