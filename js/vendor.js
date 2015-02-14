@@ -1,5 +1,6 @@
 ---
 ---
+{% capture cache %}
 
 {% include_relative vendor/jquery.min.js %}
 {% include_relative vendor/fastclick.min.js %}
@@ -27,3 +28,5 @@ All the possible foundation modules:
   foundation.topbar
   foundation.equalizer
 {% endcomment %}
+
+{% endcapture %}{{ cache | strip_newlines }}
