@@ -1,7 +1,9 @@
 # To minify javascript within a directory:
 
-for i in `ls *.js`                                       <<<
+for i in `ls *.js`
 do
   j=`echo $i | sed 's/\.js$/.min.js/'`
-  ruby -r uglifier -e 'puts Uglifier.compile(File.read(ARGV[0]), output: { beautify: true, width: 500})' $i > $j
+  echo "{% raw %}" > $j
+  ruby -r uglifier -e 'puts Uglifier.compile(File.read(ARGV[0]))' $i >> $j
+  echo "{% endraw %}" >> $j
 done
