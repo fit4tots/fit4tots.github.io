@@ -4,15 +4,16 @@ require 'json'
 require 'open-uri'
 versions = JSON.parse open('https://pages.github.com/versions.json').read
 
+# puts versions.inspect
+
 ruby versions['ruby']
 
-gem 'bundler', '>= 1.8.0'
+gem 'bundler', '~> 1.8.0'
 
 gem 'github-pages', versions['github-pages']
 
 gem 'bourbon', '4.1.1'
-gem 'neat', '1.7.1'
-gem 'bitters', '1.0.0'
+gem 'uglifier'
 
 gem 'haml'
 gem 'guard-haml'
