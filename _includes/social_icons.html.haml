@@ -1,7 +1,11 @@
 %ul.social-icons
   %li
     %a{href: "https://facebook.com/{{ site.facebook_username }}", target: '_blank'}>
-      {% include svgs/facebook_circle.svg %}
+      %span.fa-stack
+        %i.fa.fa-circle.facebook-color.fa-stack-2x
+        %i.fa.fa-facebook.fa-stack-1x
   %li
     %a{href: "https://twitter.com/{{ site.twitter_username }}", target: '_blank'}>
-      {% include svgs/twitter_circle.svg %}
+      %span.fa-stack
+        %i.fa.twitter-color.fa-circle.fa-stack-2x
+        %i.fa.fa-twitter.fa-stack-1x

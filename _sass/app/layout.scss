@@ -1,43 +1,3 @@
-// Foundation tweaks
-
-@media #{$small-only} {
-  .small-only-text-center {
-    text-align: center;
-  }
-}
-
-@media #{$medium-only} {
-  h1 {
-    font-size: $h1-font-size - ($h1-font-reduction / 2);
-  }
-}
-
-@media #{$medium-up} {
-  .medium-right {
-    float: right !important;
-  }
-  .medium-text-center {
-    text-align: center;
-  }
-}
-
-@media #{$large-up} {
-  .large-right {
-    float: right !important;
-  }
-  .large-text-center {
-    text-align: center;
-  }
-}
-
-.panel {
-  &, img { border-radius: $global-radius; }
-
-  &.callout {
-    margin-top: 1px;
-  }
-}
-
 // Layout
 
 $logo_width: rem-calc(96);
@@ -138,53 +98,39 @@ body > .off-canvas-wrap > .inner-wrap {
 .social-icons {
   list-style-type: none;
 
-  svg, img, object {
-    width: rem-calc(32);
-    height: rem-calc(32);
-    display: inline-block;
-    vertical-align: middle;
-    z-index: -1;
-    pointer-events: none;
+  a {
+    text-decoration: none;
   }
 
-  a {
-    z-index: 1;
-    text-decoration: none;
+  .fa-stack {
+    font-size: rem-calc(16);
+  }
+
+  .fa-stack-1x {
+    line-height: rem-calc(32);
   }
 
   footer & {
     float: right;
     li { float: left; }
     margin-bottom: 0;
-    a { padding: 0 0 0 $topbar-link-padding; }
+    a { margin: 0 0 0 $topbar-link-padding; }
   }
 
   nav.top-bar & {
     @media #{$medium-up} {
       float: right;
       li { float: left; }
-      a { padding: 0 $topbar-link-padding 0 0 !important; }
+      a {
+        padding: 0 !important;
+        margin: 0 $topbar-link-padding 0 0 !important;
+      }
     }
 
-    a:not(:hover) svg {
-      circle { fill: #000; }
-      path { fill: $gainsboro; }
+    a:not(:hover) {
+      .fa-stack-2x { color: $gainsboro; }
+      .fa-stack-1x { color: $topbar-bg-color; }
     }
   }
 }
 
-#environment {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-  padding: rem-calc(12);
-  background-color: #3CB371;
-  border-top-left-radius: $global-radius * 2;
-  color: #fff;
-  font-size: rem-calc(12);
-  line-height: 0;
-  z-index: 10000;
-  display: none;
-  &.development, &.staging { display: block; }
-}

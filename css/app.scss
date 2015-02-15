@@ -2,10 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import "app/variables";
-
-@import url("http://fonts.googleapis.com/css?family=Istok+Web:400,700");
-
 @import "vendor/normalize";
 @import "vendor/bourbon-4.2.0/bourbon";
 @import "app/foundation";
+@import "app/global";
 @import "app/layout";

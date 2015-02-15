@@ -1,8 +1,14 @@
 <ul class="social-icons">
   <li><a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
-      {% include svgs/facebook_circle.svg %}
+      <span class="fa-stack">
+        <i class="fa fa-circle facebook-color fa-stack-2x"></i>
+        <i class="fa fa-facebook fa-stack-1x"></i>
+      </span>
     </a></li>
   <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-      {% include svgs/twitter_circle.svg %}
+      <span class="fa-stack">
+        <i class="fa twitter-color fa-circle fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x"></i>
+      </span>
     </a></li>
 </ul>

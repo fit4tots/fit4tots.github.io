@@ -1,0 +1,63 @@
+.facebook-color {
+  color: $facebook_color;
+}
+
+.twitter-color {
+  color: $twitter_color;
+}
+
+#environment {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding: rem-calc(12);
+  background-color: #3CB371;
+  border-top-left-radius: $global-radius * 2;
+  color: #fff;
+  font-size: rem-calc(12);
+  line-height: 0;
+  z-index: 10000;
+  display: none;
+  &.development, &.staging { display: block; }
+}
+
+// Foundation tweaks
+
+@media #{$small-only} {
+  .small-only-text-center {
+    text-align: center;
+  }
+}
+
+@media #{$medium-only} {
+  h1 {
+    font-size: $h1-font-size - ($h1-font-reduction / 2);
+  }
+}
+
+@media #{$medium-up} {
+  .medium-right {
+    float: right !important;
+  }
+  .medium-text-center {
+    text-align: center;
+  }
+}
+
+@media #{$large-up} {
+  .large-right {
+    float: right !important;
+  }
+  .large-text-center {
+    text-align: center;
+  }
+}
+
+.panel {
+  &, img { border-radius: $global-radius; }
+
+  &.callout {
+    margin-top: 1px;
+  }
+}
