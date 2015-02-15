@@ -118,8 +118,9 @@ body > .off-canvas-wrap > .inner-wrap {
   }
 
   nav.top-bar & {
+    float: right;
+
     @media #{$medium-up} {
-      float: right;
       li { float: left; }
       a {
         padding: 0 !important;
