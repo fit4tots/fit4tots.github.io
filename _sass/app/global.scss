@@ -61,3 +61,7 @@
     margin-top: 1px;
   }
 }
+
+.button, input[type=submit], button {
+  border-radius: $global-radius;
+}

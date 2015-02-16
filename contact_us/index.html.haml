@@ -1,6 +1,41 @@
 :plain
   ---
   layout: default
+  title: Contact Us
   ---
 
-%h1.text-center TODO - contact us page
+%br
+.row
+  .large-6.columns.large-centered
+    -#%form{action: 'http://formspree.io/info@fit4tots.com' }
+    %form{ action: 'http://formspree.io/fit4tots@wildcountrytech.co.uk',
+           method: 'POST' }
+      %input{type: 'text', name: '_gotcha', style: 'display:none' }
+
+      %input{type: 'hidden', name: '_subject',
+             value: 'Your {{site.name}} enquiry'}
+
+      %input{type: 'hidden', name: '_next',
+              value: "{{ '/contact_us/thanks.html' | prepend: site.baseurl | prepend: site.url }}" }
+
+      %label Name
+      %input{name: 'name', type: 'text', required: true,
+             placeholder: 'Please tell us your name' }
+
+      %label Email address
+      %input{name: 'email', type: 'email', required: true,
+             placeholder: "What email address should we use to contact you?" }
+
+      %label Subject
+      %select{name: 'subject', required: true }
+        %option(value='general') General Enquiry
+        %option(value='schools') Schools
+        %option(value='nurseries') Nurseries
+        %option(value='parents') Parents
+
+      %label Message
+      %textarea{name: 'message', rows: 5, required: true,
+          placeholder: 'Please tell us what you are enquiring about...' }
+
+
+      %input.button.small{type: 'submit', value: 'Send'}
