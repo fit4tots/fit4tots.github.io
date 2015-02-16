@@ -4,7 +4,14 @@
       <nav>
         <ul class="left">
           <li>
+            {% if page.path == 'index.html' %}
             <a data-slide-to="" href="#about_us">About Us</a>
+            {% else %}
+            <a href="/#about_us">About Us</a>
+            {% endif %}
+          </li>
+          <li>
+            <a></a>
           </li>
         </ul>
         {% include social_icons.html %}

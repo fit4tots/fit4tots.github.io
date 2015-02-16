@@ -4,7 +4,14 @@
       %nav
         %ul.left
           %li
+            {% if page.path == 'index.html' %}
             %a{data: { slide_to: ''}, href: '#about_us'} About Us
+            {% else %}
+            %a{href: '/#about_us'} About Us
+            {% endif %}
+
+          %li
+            %a
 
         {% include social_icons.html %}
 
