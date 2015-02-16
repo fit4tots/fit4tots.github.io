@@ -6,14 +6,14 @@
 
 %br
 .row
-  .large-6.columns.large-centered
-    -#%form{action: 'http://formspree.io/info@fit4tots.com' }
+  .large-6.medium-8.columns.small-centered
+    -#%form{action: 'http://formspree.io/info@fit4tots.com',
     %form{ action: 'http://formspree.io/fit4tots@wildcountrytech.co.uk',
            method: 'POST' }
       %input{type: 'text', name: '_gotcha', style: 'display:none' }
 
       %input{type: 'hidden', name: '_subject',
-             value: 'Your {{site.name}} enquiry'}
+             value: "{{site.title}} enquiry" }
 
       %input{type: 'hidden', name: '_next',
               value: "{{ '/contact_us/thanks.html' | prepend: site.baseurl | prepend: site.url }}" }
@@ -24,7 +24,7 @@
 
       %label Email address
       %input{name: 'email', type: 'email', required: true,
-             placeholder: "What email address should we use to contact you?" }
+             placeholder: "What is your email address?" }
 
       %label Subject
       %select{name: 'subject', required: true }
@@ -34,7 +34,7 @@
         %option(value='parents') Parents
 
       %label Message
-      %textarea{name: 'message', rows: 5, required: true,
+      %textarea{name: 'body', rows: 5, required: true,
           placeholder: 'Please tell us what you are enquiring about...' }
 
 

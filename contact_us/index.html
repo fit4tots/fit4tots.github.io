@@ -4,15 +4,15 @@ title: Contact Us
 ---
 <br>
 <div class="row">
-  <div class="large-6 columns large-centered">
+  <div class="large-6 medium-8 columns small-centered">
     <form action="http://formspree.io/fit4tots@wildcountrytech.co.uk" method="POST">
       <input name="_gotcha" style="display:none" type="text">
-      <input name="_subject" type="hidden" value="Your {{site.name}} enquiry">
+      <input name="_subject" type="hidden" value="{{site.title}} enquiry">
       <input name="_next" type="hidden" value="{{ '/contact_us/thanks.html' | prepend: site.baseurl | prepend: site.url }}">
       <label>Name</label>
       <input name="name" placeholder="Please tell us your name" required type="text">
       <label>Email address</label>
-      <input name="email" placeholder="What email address should we use to contact you?" required type="email">
+      <input name="email" placeholder="What is your email address?" required type="email">
       <label>Subject</label>
       <select name="subject" required>
         <option value="general">General Enquiry</option>
@@ -21,7 +21,7 @@ title: Contact Us
         <option value="parents">Parents</option>
       </select>
       <label>Message</label>
-      <textarea name="message" placeholder="Please tell us what you are enquiring about..." required rows="5"></textarea>
+      <textarea name="body" placeholder="Please tell us what you are enquiring about..." required rows="5"></textarea>
       <input class="button small" type="submit" value="Send">
     </form>
   </div>
