@@ -83,6 +83,10 @@ body > .off-canvas-wrap > .inner-wrap {
       @media #{$large-up} { text-align: center; }
     }
   }
+
+  > main {
+    @media #{$medium-up} { margin-top: rem-calc(24); }
+  }
 }
 
 @media #{$small-only} {

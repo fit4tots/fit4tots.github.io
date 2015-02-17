@@ -14,7 +14,7 @@
           %a{ href: "{{ '/' | prepend: site.baseurl }}"} Home
         {% endunless %}
 
-        {% assign links = 'contact_us' | split: '|' %}
+        {% assign links = 'contact_us|schools' | split: '|' %}
         {% for link in links %}
         {%   assign text = link | capitalize | split: '_' %}
         %li{class: "{% if page.path contains link %}{{ 'active' }}{% endif %}" }
@@ -24,7 +24,7 @@
             {% endfor %}
         {% endfor %}
 
-        {% assign links = 'schools|nurseries|parents' | split: '|' %}
+        {% assign links = 'nurseries|parents' | split: '|' %}
         {% for link in links %}
         {%   assign text = link | capitalize | split: '_' %}
         %li

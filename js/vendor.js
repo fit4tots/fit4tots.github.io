@@ -5,6 +5,7 @@
 {% include_relative vendor/foundation-5.5.1/foundation.min.js %}
 {% include_relative vendor/foundation-5.5.1/foundation.interchange.min.js %}
 {% include_relative vendor/foundation-5.5.1/foundation.topbar.min.js %}
+{% include_relative vendor/foundation-5.5.1/foundation.equalizer.min.js %}
 
 {% comment %}
 All the possible foundation modules:

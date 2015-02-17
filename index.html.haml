@@ -5,7 +5,7 @@
   excerpt: Our aim is to make fitness and sport fun and build healthy habits for life.
   ---
 
-%img{ data: {interchange: "[{{ '/c_scale,f_auto,w_970/v1423519271/kids_jumping_cdmq4q.jpg' | prepend: site.cloudinary_prefix }} (default)],[{{ '/c_scale,f_auto,w_600/v1423519106/kids_jumping2_q5zwh9' | prepend: site.cloudinary_prefix }} (small-only)]"}}
+%img{ data: {interchange: "[{{site.cloudinary_prefix}}/c_scale,f_auto,w_970/v1423519271/kids_jumping_cdmq4q (default)], [{{site.cloudinary_prefix}}/c_scale,f_auto,w_600/v1423519106/kids_jumping2_q5zwh9 (small-only)]"}}
 
 #about_us.panel.callout
   %h3 What we do
@@ -17,32 +17,45 @@
     Fit4Tots classes offer a broad range of sports and fitness activities for children from 2 to 7 years old. Children get to try out and build skills for a variety of sports in a fun and varied environment. We offer classes in schools, nurseries and community venues and  build a foundation of healthy fitness habits through sport, games, music and movement.
 
 
-{% assign default_tr = '/w_600,c_scale/w_600,h_600,c_crop,g_north,f_auto' %}
-{% assign medium_tr = '/w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto' %}
+:ruby
+  default_tr = '/w_600,c_scale/w_600,h_600,c_crop,g_north,f_auto'
+  medium_tr = '/w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto'
 
-.row
+- read_more_soon = capture_haml do
+  %a.button.tiny.disabled{href: "javascript:alert('Coming soon')"} Read more
+
+.row(data-equalizer)
   #schools.medium-4.columns
+    - url = "{{ '/schools' | prepend: site.baseurl }}"
     .panel
-      %h3 Schools
-      %p We run fitness and multi skills classes for KS1
+      %h3
+        %a{href: url} Schools
+      %p(data-equalizer-watch)
+        We run fitness and multi skills classes for KS1
+        %a.button.tiny{href: url} Read more
 
-      {% assign img = '/v1423519123/school_photo_kbozdy' %}
-      %img{data: { interchange: "[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]"}}
+      - img = '/v1423519123/school_photo_kbozdy'
+      %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]" }}
 
   #nurseries.medium-4.columns
     .panel
       %h3 Nurseries
-      %p Fun fitness and sports classes for pre-schoolers
+      %p(data-equalizer-watch)
+        Fun fitness and sports classes for pre-schoolers
+        = read_more_soon
 
-      {% assign img = '/v1423519084/girls_dancing_tabj5k.jpg' %}
-      %img{data: { interchange: "[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]"}}
+      - img = '/v1423519084/girls_dancing_tabj5k'
+      %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]" }}
 
   #parents.medium-4.columns
     .panel
       %h3 Parents
-      %p Join in some fitness fun with your little one
-      {% assign img = '/v1423568695/IMG_4392_lpgcf6' %}
-      %img{data: { interchange: "[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]"}}
+      %p(data-equalizer-watch)
+        Join in some fitness fun with your little one
+        = read_more_soon
+
+      - img = '/v1423568695/IMG_4392_lpgcf6'
+      %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]" }}
 
 #location
   .panel
@@ -50,6 +63,8 @@
       .medium-7.columns
         %h3 Where we are
         Our classes take place in Bristol and North Somerset
+        %br
+        = read_more_soon
 
       .medium-5.columns.text-center
         %img{src: "{{ '/images/uk_map.svg' | prepend: site.baseurl }}"}

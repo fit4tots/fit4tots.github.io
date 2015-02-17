@@ -63,6 +63,10 @@
     background-color: $f4t_blue;
     border-color: $f4t_pink;
   }
+
+  button, .button {
+    margin-bottom: 0;
+  }
 }
 
 .button, input[type=submit], button {

@@ -4,7 +4,6 @@
   title: Contact Us
   ---
 
-%br
 .row
   .large-6.medium-8.columns.small-centered
     %form{action: 'http://formspree.io/info@fit4tots.com', method: 'POST' }
@@ -26,14 +25,13 @@
 
       %label Subject
       %select{name: 'subject', required: true }
-        %option(value='general') General Enquiry
-        %option(value='schools') Schools
-        %option(value='nurseries') Nurseries
-        %option(value='parents') Parents
+        %option(value='general') General enquiry
+        %option(value='schools') Schools enquiry
+        %option(value='nurseries') Nurseries enquiry
+        %option(value='parents') Parents enquiry
 
       %label Message
       %textarea{name: 'body', rows: 5, required: true,
           placeholder: 'Please tell us what you are enquiring about...' }
-
 
       %input.button.small{type: 'submit', value: 'Send'}
