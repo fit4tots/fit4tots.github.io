@@ -54,6 +54,37 @@
   }
 }
 
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea,
+select {
+  // All "text-like" input fields should have rounded corners
+  border-radius: $global-radius;
+
+  @media #{$small-only} {
+    // Set to 16px to ensure that iPhones don't zoom into the form
+    // http://stevenosloan.com/articles/2013/prevent-zooming-on-forms
+    font-size: 16px;
+  }
+}
+
+// Correct a bug with iPhone landscape font display
+@media #{$small-only} and (orientation:landscape) {
+  body { -webkit-text-size-adjust: none; }
+}
+
 .panel {
   &, img { border-radius: $global-radius; }
 
