@@ -59,6 +59,9 @@
 
   &.callout {
     margin-top: 1px;
+    &, h1, h2, h3, h4, p { color: $white; }
+    background-color: $f4t_blue;
+    border-color: $f4t_pink;
   }
 }
 
