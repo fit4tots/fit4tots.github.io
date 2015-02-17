@@ -6,7 +6,7 @@ description: ''
 baseurl: ''
 url: 'http://www.fit4tots.com' # the base hostname & protocol for your site
 twitter_username: fit4tots
-facebook_username: fit4totsUK
+facebook_username: Fit4TotsUK
 cloudinary_prefix: 'http://res.cloudinary.com/fit4tots/image/upload'
 timezone: Europe/London
 google_analytics_code: UA-59713370-1

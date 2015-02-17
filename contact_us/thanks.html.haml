@@ -7,5 +7,17 @@
 %br
 .row
   .large-6.medium-8.columns.small-centered.text-center
-    %p Thank you for your enquiry.
-    %p We will be in touch very soon.
+    %p Thank you for your {{site.title}} enquiry.
+
+    %p We will be in touch within a few days to respond to your query.
+
+    %p
+      Don't forget to come and find us on Facebook
+      %a{href: "https://facebook.com/{{ site.facebook_username }}", target: '_blank'}>
+        %i.fa.fa-facebook-square.facebook-color
+        {{ site.facebook_username }}
+
+      -# and Twitter
+      -# %a{href: "https://twitter.com/{{ site.twitter_username }}", target: '-# _blank'}>
+      -#   %i.fa.fa-twitter-square
+      -#   @{{ site.twitter_username }}
