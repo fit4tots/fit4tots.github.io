@@ -9,19 +9,19 @@ title: Contact Us
       <input name="_subject" type="hidden" value="{{site.title}} enquiry">
       <input name="_next" type="hidden" value="{{ '/contact_us/thanks.html' | prepend: site.baseurl | prepend: site.url }}">
       <label>Name</label>
-      <input name="name" placeholder="Please tell us your name" required type="text">
+      <input autocorrect="off" autofocus name="name" placeholder="Please tell us your name" required spellcheck="off" tabindex="1" type="text">
       <label>Email address</label>
-      <input name="email" placeholder="What is your email address?" required type="email">
+      <input autocapitalize="off" autocorrect="off" name="email" placeholder="What is your email address?" required spellcheck="off" tabindex="2" type="email">
       <label>Subject</label>
-      <select name="subject" required>
+      <select name="subject" required tabindex="3">
         <option value="general">General enquiry</option>
         <option value="schools">Schools enquiry</option>
         <option value="nurseries">Nurseries enquiry</option>
         <option value="parents">Parents enquiry</option>
       </select>
       <label>Message</label>
-      <textarea name="body" placeholder="Please tell us what you are enquiring about..." required rows="5"></textarea>
-      <input class="button small" type="submit" value="Send">
+      <textarea name="body" placeholder="Please tell us what you are enquiring about..." required rows="5" tabindex="4"></textarea>
+      <input class="button small" tabindex="5" type="submit" value="Send">
     </form>
   </div>
 </div>
