@@ -4,9 +4,7 @@
   title: Information for Nurseries
   ---
 
-:ruby
-  default_tr = '/w_600,c_scale,f_auto/'
-  medium_tr = '/w_450,c_scale,f_auto/'
+- default_tr = '/w_600,c_scale,f_auto/'
 
 - more_button = capture_haml do
   %a.button.tiny.medium-right{href: "{{ '/contact_us' | prepend: site.base_url }}?subject=nurseries"} Find out more
@@ -24,7 +22,7 @@
     .medium-6.columns
       %br.show-for-small-only
       - img = '/v1424269418/boy_bending_eglvgz'
-      %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]"}}
+      %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}/w_450,c_scale,f_auto/#{img} (medium)]"}}
 
 .panel
   .row
