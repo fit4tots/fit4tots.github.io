@@ -210,7 +210,7 @@ $xxlarge-range: ($max-em, $max-em);
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-$header-font-family: 'Istok Web', $font-family-sans-serif;
+$header-font-family: $f4t_header_font, $font-family-sans-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
@@ -295,9 +295,9 @@ $header-font-family: 'Istok Web', $font-family-sans-serif;
 
 // We use these to style blockquotes
 // $blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
-// $blockquote-padding: rem-calc(9 20 0 19);
-// $blockquote-border: 1px solid $gainsboro;
-// $blockquote-cite-font-size: rem-calc(13);
+$blockquote-padding: 0;
+$blockquote-border: none;
+$blockquote-cite-font-size: rem-calc(16);
 // $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
 // $blockquote-cite-link-color: $blockquote-cite-font-color;
 

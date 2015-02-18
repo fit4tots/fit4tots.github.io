@@ -6,6 +6,10 @@
   color: $twitter_color;
 }
 
+.script-font {
+  font-family: $f4t_script_font;
+}
+
 #environment {
   position: fixed;
   bottom: 0;
@@ -83,6 +87,13 @@ select {
 // Correct a bug with iPhone landscape font display
 @media #{$small-only} and (orientation:landscape) {
   body { -webkit-text-size-adjust: none; }
+}
+
+blockquote {
+  span {
+    font-family: $f4t_script_font;
+    font-size: $h4-font-size;
+  }
 }
 
 .panel {
