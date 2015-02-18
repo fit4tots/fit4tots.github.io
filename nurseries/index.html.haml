@@ -1,0 +1,38 @@
+:plain
+  ---
+  layout: default
+  title: Information for Nurseries
+  ---
+
+:ruby
+  default_tr = '/w_600,c_scale,f_auto/'
+  medium_tr = '/w_450,c_scale,f_auto/'
+
+- more_button = capture_haml do
+  %a.button.tiny.medium-right{href: "{{ '/contact_us' | prepend: site.base_url }}?subject=nurseries"} Find out more
+  %br.show-for-medium-up
+
+.panel.callout
+  .row
+    .medium-6.columns
+      - img = 'v1423519106/kids_jumping2_q5zwh9'
+
+      %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]"}}
+
+    .medium-6.columns
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      %a.button.secondary.small{href: "{{ '/contact_us' | prepend: site.base_url }}?subject=nurseries"} Contact Us
+
+.panel
+  %h3 Heading here
+  %p Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  = more_button
+
+.panel
+  %h3 Heading here
+  %p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  = more_button
+
+%br

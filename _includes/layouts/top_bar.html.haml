@@ -14,7 +14,7 @@
           %a{ href: "{{ '/' | prepend: site.baseurl }}"} Home
         {% endunless %}
 
-        {% assign links = 'contact_us|schools' | split: '|' %}
+        {% assign links = 'contact_us|schools|nurseries|parents' | split: '|' %}
         {% for link in links %}
         {%   assign text = link | capitalize | split: '_' %}
         %li{class: "{% if page.path contains link %}{{ 'active' }}{% endif %}" }
@@ -22,19 +22,6 @@
             {% for word in text %}
             {{   word || capitalize }}
             {% endfor %}
-        {% endfor %}
-
-        {% assign links = 'nurseries|parents' | split: '|' %}
-        {% for link in links %}
-        {%   assign text = link | capitalize | split: '_' %}
-        %li
-          {% if page.path == 'index.html' %}
-          %a{data: { slide_to: '' }, href: "\#{{link}}" }
-            {{ link || capitalize }}
-          {% else %}
-          %a{href: "/\#{{link}}" }
-            {{ link || capitalize }}
-          {% endif %}
         {% endfor %}
 
       {% include social_icons.html %}

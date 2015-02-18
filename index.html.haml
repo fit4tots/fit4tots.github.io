@@ -28,8 +28,7 @@
   #schools.medium-4.columns
     - url = "{{ '/schools' | prepend: site.baseurl }}"
     .panel
-      %h3
-        %a{href: url} Schools
+      %h3 Schools
       %p(data-equalizer-watch)
         We run fitness and multi skills classes for KS1
         %a.button.tiny{href: url} Read more
@@ -38,21 +37,23 @@
       %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]" }}
 
   #nurseries.medium-4.columns
+    - url = "{{ '/nurseries' | prepend: site.baseurl }}"
     .panel
       %h3 Nurseries
       %p(data-equalizer-watch)
         Fun fitness and sports classes for pre-schoolers
-        = read_more_soon
+        %a.button.tiny{href: url} Read more
 
       - img = '/v1423519084/girls_dancing_tabj5k'
       %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]" }}
 
   #parents.medium-4.columns
+    - url = "{{ '/parents' | prepend: site.baseurl }}"
     .panel
       %h3 Parents
       %p(data-equalizer-watch)
         Join in some fitness fun with your little one
-        = read_more_soon
+        %a.button.tiny{href: url} Read more
 
       - img = '/v1423568695/IMG_4392_lpgcf6'
       %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]" }}
@@ -62,9 +63,8 @@
     .row
       .medium-7.columns
         %h3 Where we are
-        Our classes take place in Bristol and North Somerset
-        %br
-        = read_more_soon
+
+        %p Our classes take place in Bristol and North Somerset
 
       .medium-5.columns.text-center
         %img{src: "{{ '/images/uk_map.svg' | prepend: site.baseurl }}"}

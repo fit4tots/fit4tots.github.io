@@ -16,7 +16,7 @@
           <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
         </li>
         {% endunless %}
-        {% assign links = 'contact_us|schools' | split: '|' %}
+        {% assign links = 'contact_us|schools|nurseries|parents' | split: '|' %}
         {% for link in links %}
         {%   assign text = link | capitalize | split: '_' %}
         <li class="{% if page.path contains link %}{{ 'active' }}{% endif %}">
@@ -25,21 +25,6 @@
             {{   word || capitalize }}
             {% endfor %}
           </a>
-        </li>
-        {% endfor %}
-        {% assign links = 'nurseries|parents' | split: '|' %}
-        {% for link in links %}
-        {%   assign text = link | capitalize | split: '_' %}
-        <li>
-          {% if page.path == 'index.html' %}
-          <a data-slide-to="" href="#{{link}}">
-            {{ link || capitalize }}
-          </a>
-          {% else %}
-          <a href="/#{{link}}">
-            {{ link || capitalize }}
-          </a>
-          {% endif %}
         </li>
         {% endfor %}
       </ul>
