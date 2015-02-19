@@ -21,9 +21,6 @@
   default_tr = '/w_600,c_scale/w_600,h_600,c_crop,g_north,f_auto'
   medium_tr = '/w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto'
 
-- read_more_soon = capture_haml do
-  %a.button.tiny.disabled{href: "javascript:alert('Coming soon')"} Read more
-
 .row(data-equalizer)
   #schools.medium-4.columns
     %a{href: "{{ '/schools' | prepend: site.baseurl }}"}
