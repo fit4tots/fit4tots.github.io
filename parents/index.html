@@ -2,11 +2,12 @@
 layout: default
 title: Information for Parents
 ---
+{% assign contact_us_path = '/contact_us' | prepend: site.base_url | append : '?subject=parents' %}
 <div class="panel callout">
   <div class="row">
     <div class="medium-6 columns">
       <p>Our pre school classes are based in community venues in North Somerset and Bristol. Classes use music and games to warm up the children and their parents or carers, who are encouraged to join in some of the activities.</p>
-      <a class="button secondary small" href="{{ '/contact_us' | prepend: site.base_url }}?subject=parents">Contact Us</a>
+      <a class="button secondary small" href="{{contact_us_path}}">Contact Us</a>
     </div>
     <div class="medium-6 columns">
       <br class="show-for-small-only">
@@ -41,7 +42,12 @@ title: Information for Parents
   <div class="medium-4 columns">
     <div class="panel" data-equalizer-watch>
       <h3>Prices</h3>
-      <p>Classes cost &pound;5 per session and can be booked for a term at a time. Please contact us to book a place in our community classes</p>
+      <p>
+        Classes cost &pound;5 per session and can be booked for a term at a time.
+        Please
+        <a href="{{contact_us_path}}">contact us</a>
+        to book a place in our community classes.
+      </p>
     </div>
   </div>
 </div>

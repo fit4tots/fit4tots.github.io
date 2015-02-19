@@ -8,8 +8,10 @@
   default_tr = '/w_600,c_scale,f_auto/'
   medium_tr = '/w_450,c_scale,f_auto/'
 
+{% assign contact_us_path = '/contact_us' | prepend: site.base_url | append: '?subject=schools' %}
+
 - more_button = capture_haml do
-  %a.button.tiny.medium-right{href: "{{ '/contact_us' | prepend: site.base_url }}?subject=schools"} Find out more
+  %a.button.tiny.medium-right{href: "{{contact_us_path}}"} Find out more
   %br.show-for-medium-up
 
 .panel.callout
@@ -23,7 +25,7 @@
       %br.show-for-small-only
       %p Our after school FitKid classes can be fitness, sport or a mixture of both. They usually run in a school hall, immediately after the end of the school day, although we can provide some classes during school hours if desirable.
 
-      %a.button.secondary.small{href: "{{ '/contact_us' | prepend: site.base_url }}?subject=schools"} Contact Us
+      %a.button.secondary.small{href: "{{contact_us_path}}"} Contact Us
 
 .panel
   %h3 Multi-skills sport sessions

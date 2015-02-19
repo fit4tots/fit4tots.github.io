@@ -6,9 +6,7 @@
 
 - default_tr = '/w_600,c_scale,f_auto/'
 
-- more_button = capture_haml do
-  %a.button.tiny.medium-right{href: "{{ '/contact_us' | prepend: site.base_url }}?subject=nurseries"} Find out more
-  %br.show-for-medium-up
+{% assign contact_us_path = '/contact_us' | prepend: site.base_url | append: '?subject=nurseries' %}
 
 .panel.callout
   .row
@@ -46,7 +44,7 @@
 
   %p We don't need a huge amount of space and can tailor our classes to the space available, although the space will limit the number of children we can take in each class and the type of activities we can use. Nursery staff are encouraged to join in with the classes.
 
-  %a.button.tiny.medium-right{href: "{{ '/contact_us' | prepend: site.base_url }}?subject=nurseries"} Contact us for a free trial
+  %a.button.tiny.medium-right{href: "{{contact_us_path}}"} Contact us for a free trial
   %br.show-for-medium-up
 
 %br

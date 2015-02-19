@@ -8,12 +8,14 @@
   %a.button.tiny.medium-right{href: "{{ '/contact_us' | prepend: site.base_url }}?subject=parents"} Find out more
   %br.show-for-medium-up
 
+{% assign contact_us_path = '/contact_us' | prepend: site.base_url | append : '?subject=parents' %}
+
 .panel.callout
   .row
     .medium-6.columns
       %p Our pre school classes are based in community venues in North Somerset and Bristol. Classes use music and games to warm up the children and their parents or carers, who are encouraged to join in some of the activities.
 
-      %a.button.secondary.small{href: "{{ '/contact_us' | prepend: site.base_url }}?subject=parents"} Contact Us
+      %a.button.secondary.small{href: "{{contact_us_path}}"} Contact Us
 
     .medium-6.columns
       %br.show-for-small-only
@@ -59,4 +61,8 @@
   .medium-4.columns
     .panel(data-equalizer-watch)
       %h3 Prices
-      %p Classes cost &pound;5 per session and can be booked for a term at a time. Please contact us to book a place in our community classes
+      %p
+        Classes cost &pound;5 per session and can be booked for a term at a time.
+        Please
+        %a{href: "{{contact_us_path}}"} contact us
+        to book a place in our community classes.
