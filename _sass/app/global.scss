@@ -96,8 +96,12 @@ blockquote {
   }
 }
 
+html.touch .touch-th {
+  @include thumb;
+}
+
 .panel {
-  &, img { border-radius: $global-radius; }
+  &, img, .th, .small-th { border-radius: $global-radius; }
 
   &.callout {
     margin-top: 1px;
@@ -108,6 +112,13 @@ blockquote {
 
   button, .button {
     margin-bottom: 0;
+  }
+}
+
+a > .panel {
+  &:hover, &:active {
+    border-color: $white;
+    box-shadow: 0 0 18px 0 rgba($primary-color, 0.5);
   }
 }
 
