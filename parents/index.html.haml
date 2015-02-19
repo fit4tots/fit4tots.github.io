@@ -27,13 +27,36 @@
 
 
 .panel
-  %h3 Heading here
-  %p Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-  = more_button
+  %blockquote
+    %i.fa.fa-quote-right
+    %span My 4 year old daughter and 2 year old twins really enjoyed the fits4tots session. My twins are usually quite shy but were drawn into the fun warm up session and thoroughly enjoyed the easy to follow, fun activities.  Great for burning off some energy and getting them involved in group play. Would highly recommend!
+
+    %cite Claire, Long Ashton
 
 .panel
-  %h3 Heading here
-  %p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  = more_button
+  %h3 Class content
 
-%br
+  %p Classes are planned to encourage the development of key skills for sports; including hand eye coordination, agility and balance, running, jumping and throwing. Classes encourage cooperation and turn taking, independence and team work in various sessions. They are designed to be a fun and active 45 minutes getting children’s heart rate up and developing skills and enthusiasm for sports and fitness that we hope will stay with them throughout their lives.
+
+
+.row(data-equalizer)
+  .medium-4.columns
+    .panel(data-equalizer-watch)
+      %h4 Venues
+      %p Long Ashton Village Hall, Wednesdays 10.45 am
+      %p St Andrew's Church Hall, Clevedon, Mondays 10am
+
+  .medium-4.columns
+    .panel(data-equalizer-watch)
+      :ruby
+        default_tr = '/w_600,c_scale,f_auto,a_90/'
+        medium_tr = '/w_260,c_scale,f_auto,a_90/'
+        img = 'v1424269474/IMG_4412_i1h3ky.jpg'
+
+      %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]"}}
+
+
+  .medium-4.columns
+    .panel(data-equalizer-watch)
+      %h3 Prices
+      %p Classes cost &pound;5 per session and can be booked for a term at a time. Please contact us to book a place in our community classes
