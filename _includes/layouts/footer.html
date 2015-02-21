@@ -4,14 +4,10 @@
       <nav>
         <ul class="left">
           <li>
-            {% if page.path == 'index.html' %}
-            <a data-slide-to="" href="#about_us">About Us</a>
-            {% else %}
-            <a href="/#about_us">About Us</a>
-            {% endif %}
+            <a href="{{ '/about_us' | prepend: site.baseurl }}">About Us</a>
           </li>
           <li>
-            <a href="mailto:{{site.email}}">{{site.email}}</a>
+            <a href="mailto:{{site.email}}">{{ site.email }}</a>
           </li>
         </ul>
         {% include social_icons.html %}

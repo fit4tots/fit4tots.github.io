@@ -1,0 +1,88 @@
+:plain
+  ---
+  layout: default
+  title: Information for Parents
+  ---
+
+- more_button = capture_haml do
+  %a.button.tiny.medium-right{href: "{{ '/contact_us' | prepend: site.base_url }}?subject=parents"} Find out more
+  %br.show-for-medium-up
+
+{% assign contact_us_path = '/contact_us' | prepend: site.base_url | append : '?subject=parents' %}
+
+.panel.callout
+  .row
+    .medium-6.columns
+      %p Our pre school classes are based in community venues in North Somerset and Bristol. Classes use music and games to warm up the children and their parents or carers, who are encouraged to join in some of the activities.
+
+      %a.button.secondary.small{href: "{{contact_us_path}}"} Contact Us
+
+    .medium-6.columns
+      %br.show-for-small-only
+
+      :ruby
+        tr = '/c_crop,x_2000,y_0,w_1500,h_3000,g_east'
+        default_tr = "#{tr}/w_550,c_scale,f_auto,a_90/"
+        medium_tr = "#{tr}/w_450,c_scale,f_auto,a_90/"
+        img = 'v1424269478/IMG_4416_azzgtz'
+
+      %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]"}}
+
+
+.panel
+  %blockquote
+    %span
+      %i.fa.fa-quote-right
+      My 4 year old daughter and 2 year old twins really enjoyed the fits4tots session.
+
+      %span.show-for-medium-up
+        My twins are usually quite shy but were drawn into the fun warm up session and thoroughly enjoyed the easy to follow, fun activities.
+
+      Great for burning off some energy and getting them involved in group play. Would highly recommend!
+
+    %cite Claire, Long Ashton
+
+.panel
+  %h3 Class content
+
+  %p Classes are planned to encourage the development of key skills for sports; including hand eye coordination, agility and balance, running, jumping and throwing. Classes encourage cooperation and turn taking, independence and team work in various sessions. They are designed to be a fun and active 45 minutes getting children's heart rate up and developing skills and enthusiasm for sports and fitness that we hope will stay with them throughout their lives.
+
+
+.row(data-equalizer)
+  .medium-4.columns
+    .panel(data-equalizer-watch)
+      %h4 Venues
+      %p
+        Long Ashton Village Hall
+        %br
+        %em Wednesdays 10.45am
+      %p
+        St Andrew's Church Hall, Clevedon,
+        %br
+        %em Mondays 10am
+
+  .medium-4.columns
+    .panel(data-equalizer-watch)
+      :ruby
+        default_tr = '/w_550,c_scale,f_auto'
+        medium_tr = '/w_260,c_scale,f_auto'
+        medium_img = ',a_90/v1424269474/IMG_4412_i1h3ky'
+        img = '/v1424519929/IMG_4407_tfblvs'
+
+      %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{medium_img} (medium)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (large)]"}}
+
+
+  .medium-4.columns
+    .panel(data-equalizer-watch)
+      %h3 Prices
+      %p
+        Classes cost from
+        %strong &pound;4.50
+        to
+        %strong &pound;6
+        per session with discounts for block booking.
+
+      %p
+        Please
+        %a{href: "{{contact_us_path}}"} contact us
+        to book a place in our community classes.

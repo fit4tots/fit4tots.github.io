@@ -4,14 +4,10 @@
       %nav
         %ul.left
           %li
-            {% if page.path == 'index.html' %}
-            %a{data: { slide_to: ''}, href: '#about_us'} About Us
-            {% else %}
-            %a{href: '/#about_us'} About Us
-            {% endif %}
+            %a{href: "{{ '/about_us' | prepend: site.baseurl }}"} About Us
 
           %li
-            %a(href="mailto:{{site.email}}") {{site.email}}
+            %a(href="mailto:{{site.email}}") {{ site.email }}
 
         {% include social_icons.html %}
 

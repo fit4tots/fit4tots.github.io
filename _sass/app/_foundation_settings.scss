@@ -96,8 +96,8 @@ $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal;
-// $font-weight-bold: bold;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
 
 // $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
@@ -210,7 +210,7 @@ $xxlarge-range: ($max-em, $max-em);
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-$header-font-family: 'Istok Web', $font-family-sans-serif;
+$header-font-family: $f4t_header_font, $font-family-sans-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
@@ -295,9 +295,9 @@ $header-font-family: 'Istok Web', $font-family-sans-serif;
 
 // We use these to style blockquotes
 // $blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
-// $blockquote-padding: rem-calc(9 20 0 19);
-// $blockquote-border: 1px solid $gainsboro;
-// $blockquote-cite-font-size: rem-calc(13);
+$blockquote-padding: 0;
+$blockquote-border: none;
+$blockquote-cite-font-size: rem-calc(16);
 // $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
 // $blockquote-cite-link-color: $blockquote-cite-font-color;
 
@@ -639,7 +639,7 @@ $header-font-family: 'Istok Web', $font-family-sans-serif;
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
 // $form-label-font-size: rem-calc(14);
-// $form-label-font-weight: $font-weight-normal;
+$form-label-font-weight: $font-weight-bold;
 // $form-label-line-height: 1.5;
 // $form-label-font-color: scale-color($black, $lightness: 30%);
 // $form-label-small-transform: capitalize;

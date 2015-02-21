@@ -3,7 +3,7 @@ layout: default
 title: Making Sport &amp; <br class="show-for-small-only"/>Fitness Fun
 excerpt: Our aim is to make fitness and sport fun and build healthy habits for life.
 ---
-<img data-interchange="[{{ '/c_scale,f_auto,w_970/v1423519271/kids_jumping_cdmq4q.jpg' | prepend: site.cloudinary_prefix }} (default)],[{{ '/c_scale,f_auto,w_600/v1423519106/kids_jumping2_q5zwh9' | prepend: site.cloudinary_prefix }} (small-only)]">
+<img data-interchange="[{{site.cloudinary_prefix}}/c_scale,f_auto,w_970/v1423519271/kids_jumping_cdmq4q (default)], [{{site.cloudinary_prefix}}/c_scale,f_auto,w_550/v1423519106/kids_jumping2_q5zwh9 (small-only)]">
 <div class="panel callout" id="about_us">
   <h3>What we do</h3>
   <p>
@@ -13,40 +13,41 @@ excerpt: Our aim is to make fitness and sport fun and build healthy habits for l
     Fit4Tots classes offer a broad range of sports and fitness activities for children from 2 to 7 years old. Children get to try out and build skills for a variety of sports in a fun and varied environment. We offer classes in schools, nurseries and community venues and  build a foundation of healthy fitness habits through sport, games, music and movement.
   </p>
 </div>
-{% assign default_tr = '/w_600,c_scale/w_600,h_600,c_crop,g_north,f_auto' %}
-{% assign medium_tr = '/w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto' %}
-<div class="row">
-  <div class="medium-4 columns" id="schools">
+<div class="row" data-equalizer>
+  <a class="medium-4 columns" href="{{ '/schools' | prepend: site.baseurl }}" id="schools">
     <div class="panel">
       <h3>Schools</h3>
-      <p>We run fitness and multi skills classes for KS1</p>
-      {% assign img = '/v1423519123/school_photo_kbozdy' %}
-      <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
+      <p data-equalizer-watch>
+        We run fitness and multi skills classes for KS1
+      </p>
+      <img data-interchange="[{{site.cloudinary_prefix}}/w_550,c_scale/w_550,h_550,c_crop,g_north,f_auto/v1423519123/school_photo_kbozdy (default)], [{{site.cloudinary_prefix}}/w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto/v1423519123/school_photo_kbozdy (medium)]">
     </div>
-  </div>
-  <div class="medium-4 columns" id="nurseries">
+  </a>
+  <a class="medium-4 columns" href="{{ '/nurseries' | prepend: site.baseurl }}" id="nurseries">
     <div class="panel">
       <h3>Nurseries</h3>
-      <p>Fun fitness and sports classes for pre-schoolers</p>
-      {% assign img = '/v1423519084/girls_dancing_tabj5k.jpg' %}
-      <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
+      <p data-equalizer-watch>
+        Fun fitness and sports classes for pre-schoolers
+      </p>
+      <img data-interchange="[{{site.cloudinary_prefix}}/w_550,c_scale/w_550,h_550,c_crop,g_north,f_auto/v1423519084/girls_dancing_tabj5k (default)], [{{site.cloudinary_prefix}}/w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto/v1423519084/girls_dancing_tabj5k (medium)]" style="border: 1px solid #e8e8e8">
     </div>
-  </div>
-  <div class="medium-4 columns" id="parents">
+  </a>
+  <a class="medium-4 columns" href="{{ '/parents' | prepend: site.baseurl }}" id="parents">
     <div class="panel">
       <h3>Parents</h3>
-      <p>Join in some fitness fun with your little one</p>
-      {% assign img = '/v1423568695/IMG_4392_lpgcf6' %}
-      <img data-interchange="[{{ img | prepend: default_tr | prepend: site.cloudinary_prefix }} (default)], [{{ img | prepend: medium_tr | prepend: site.cloudinary_prefix }} (medium)]">
+      <p data-equalizer-watch>
+        Join in some fitness fun with your little one
+      </p>
+      <img data-interchange="[{{site.cloudinary_prefix}}/w_550,c_scale/w_550,h_550,c_crop,g_north,f_auto/v1423568695/IMG_4392_lpgcf6 (default)], [{{site.cloudinary_prefix}}/w_270,c_scale/w_270,h_180,c_crop,g_north,f_auto/v1423568695/IMG_4392_lpgcf6 (medium)]">
     </div>
-  </div>
+  </a>
 </div>
 <div id="location">
   <div class="panel">
     <div class="row">
       <div class="medium-7 columns">
         <h3>Where we are</h3>
-        Our classes take place in Bristol and North Somerset
+        <p>Our classes take place in Bristol and North Somerset</p>
       </div>
       <div class="medium-5 columns text-center">
         <img src="{{ '/images/uk_map.svg' | prepend: site.baseurl }}">

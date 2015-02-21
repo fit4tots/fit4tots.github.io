@@ -1,5 +1,9 @@
 $ ->
-  $(document).foundation()
+  $doc = $(document)
+  $doc.foundation()
+
+  $doc.on 'replace', 'img', ->
+    $doc.foundation 'equalizer', 'reflow'
 
   $nav = $('nav')
 

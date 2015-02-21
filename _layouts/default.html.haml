@@ -6,13 +6,12 @@
       .inner-wrap
         {% include layouts/top_bar.html %}
 
-        {% capture nav_logo %}
-        %a#nav_logo{href: "{{ '/' | prepend: site.baseurl }}"}
-          %img{src: "{{ '/images/logo-outline.svg' | prepend: site.baseurl }}" }
-        {% endcapture %}
+        - nav_logo = capture_haml do
+          %a#nav_logo{href: "{{ '/' | prepend: site.baseurl }}"}
+            %img{src: "{{ '/images/logo-outline.svg' | prepend: site.baseurl }}" }
 
         %header.row
-          .medium-2.large-2.columns {{ nav_logo }}
+          .medium-2.large-2.columns= nav_logo
 
           {% unless page.title == null %}
           .medium-10.large-8.columns.end
@@ -20,7 +19,7 @@
           {% endunless %}
 
           .large-2.columns.show-for-large-up
-            .right {{ nav_logo }}
+            .right= nav_logo
 
         %main.row(role="main")
           .columns {{ content }}
