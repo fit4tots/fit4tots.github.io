@@ -161,7 +161,7 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon
-  bundler (~> 1.8.0)
+  bundler
   github-pages (= 33)
   guard-haml
   haml
