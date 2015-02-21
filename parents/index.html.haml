@@ -21,8 +21,9 @@
       %br.show-for-small-only
 
       :ruby
-        default_tr = '/w_600,c_scale,f_auto,a_90/'
-        medium_tr = '/w_450,c_scale,f_auto,a_90/'
+        tr = '/c_crop,x_2000,y_0,w_1500,h_3000,g_east'
+        default_tr = "#{tr}/w_550,c_scale,f_auto,a_90/"
+        medium_tr = "#{tr}/w_450,c_scale,f_auto,a_90/"
         img = 'v1424269478/IMG_4416_azzgtz'
 
       %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]"}}
@@ -31,7 +32,12 @@
 .panel
   %blockquote
     %i.fa.fa-quote-right
-    %span My 4 year old daughter and 2 year old twins really enjoyed the fits4tots session. My twins are usually quite shy but were drawn into the fun warm up session and thoroughly enjoyed the easy to follow, fun activities.  Great for burning off some energy and getting them involved in group play. Would highly recommend!
+    %span My 4 year old daughter and 2 year old twins really enjoyed the fits4tots session.
+
+    %span.show-for-medium-up
+      My twins are usually quite shy but were drawn into the fun warm up session and thoroughly enjoyed the easy to follow, fun activities.
+
+    %span Great for burning off some energy and getting them involved in group play. Would highly recommend!
 
     %cite Claire, Long Ashton
 
@@ -45,13 +51,17 @@
   .medium-4.columns
     .panel(data-equalizer-watch)
       %h4 Venues
-      %p Long Ashton Village Hall, Wednesdays 10.45 am
-      %p St Andrew's Church Hall, Clevedon, Mondays 10am
+      %p
+        Long Ashton Village Hall
+        %em Wednesdays 10.45am
+      %p
+        St Andrew's Church Hall, Clevedon,
+        %em Mondays 10am
 
   .medium-4.columns
     .panel(data-equalizer-watch)
       :ruby
-        default_tr = '/w_600,c_scale,f_auto,a_90/'
+        default_tr = '/w_550,c_scale,f_auto,a_90/'
         medium_tr = '/w_260,c_scale,f_auto,a_90/'
         img = 'v1424269474/IMG_4412_i1h3ky.jpg'
 
@@ -62,7 +72,11 @@
     .panel(data-equalizer-watch)
       %h3 Prices
       %p
-        Classes cost &pound;5 per session and can be booked for a term at a time.
+        Classes cost
+        %em &pound;5 per session
+        and can be booked for a term at a time.
+
+      %p
         Please
         %a{href: "{{contact_us_path}}"} contact us
         to book a place in our community classes.

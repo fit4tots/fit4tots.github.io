@@ -5,7 +5,7 @@
   ---
 
 :ruby
-  default_tr = '/w_600,c_scale,f_auto/'
+  default_tr = '/w_550,c_scale,f_auto/'
   medium_tr = '/w_450,c_scale,f_auto/'
 
 {% assign contact_us_path = '/contact_us' | prepend: site.base_url | append: '?subject=schools' %}
@@ -54,7 +54,6 @@
 
     .medium-6.columns
       %br.show-for-small-only
-
       - img = 'v1424204516/lesley_at_birdwell_q6fs0n'
       %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]"}}
 
