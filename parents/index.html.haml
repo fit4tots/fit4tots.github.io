@@ -61,9 +61,10 @@
   .medium-4.columns
     .panel(data-equalizer-watch)
       :ruby
-        default_tr = '/w_550,c_scale,f_auto,a_90/'
-        medium_tr = '/w_260,c_scale,f_auto,a_90/'
-        img = 'v1424269474/IMG_4412_i1h3ky.jpg'
+        default_tr = '/w_550,c_scale,f_auto/'
+        medium_tr = '/w_260,c_scale,f_auto/'
+        #img = 'v1424269474/IMG_4412_i1h3ky.jpg'
+        img = '/v1424519929/IMG_4407_tfblvs.jpg'
 
       %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}#{medium_tr}#{img} (medium)]"}}
 

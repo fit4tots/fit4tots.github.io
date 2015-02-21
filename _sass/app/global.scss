@@ -101,7 +101,7 @@ html.touch .touch-th {
 }
 
 .panel {
-  &, img, .th, .small-th { border-radius: $global-radius; }
+  &, img, .th, .touch-th { border-radius: $global-radius; }
 
   &.callout {
     margin-top: 1px;
