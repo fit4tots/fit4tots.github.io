@@ -1,0 +1,1 @@
+Our after school FitKid classes can be fitness, sport or a mixture of both. They usually run in a school hall, immediately after the end of the school day, although we can provide some classes during school hours if desirable.
