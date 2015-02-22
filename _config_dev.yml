@@ -1,4 +1,5 @@
 # bundle exec jekyll serve --config _config.yml,_config_dev.yml
+email: fit4tots@wildcountrytech.co.uk
 url: 'http://localhost:4000'
 environment: 'development'
 
