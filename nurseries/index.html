@@ -16,18 +16,6 @@ title: Information for Nurseries
   </div>
 </div>
 <div class="panel">
-  <div class="row">
-    <div class="medium-3 columns">
-      <img data-interchange="[{{site.cloudinary_prefix}}/w_550,c_scale,f_auto/v1423519084/girls_dancing_tabj5k (default)], [{{site.cloudinary_prefix}}/w_210,c_scale,f_auto/v1423519084/girls_dancing_tabj5k (medium)]">
-    </div>
-    <div class="medium-9 column">
-      <br class="show-for-small-only">
-      {% capture content %}{% include nurseries/testimonial1.md %}{% endcapture %}
-      {{ content | markdownify }}
-    </div>
-  </div>
-</div>
-<div class="panel">
   {% capture content %}{% include nurseries/class_content.md %}{% endcapture %}
   {{ content | markdownify }}
   <a class="button tiny medium-right" href="{{contact_us_path}}">Contact us for a free trial</a>
