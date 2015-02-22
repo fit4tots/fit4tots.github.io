@@ -1,0 +1,3 @@
+### Class content
+
+Classes are planned to encourage the development of key skills for sports; including hand eye coordination, agility and balance, running, jumping and throwing. Classes encourage cooperation and turn taking, independence and team work in various sessions. They are designed to be a fun and active 45 minutes getting children's heart rate up and developing skills and enthusiasm for sports and fitness that we hope will stay with them throughout their lives.

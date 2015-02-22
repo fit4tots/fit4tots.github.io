@@ -1,3 +1,6 @@
+@import "vendor/font-awesome-4.3.0/variables";
+@import "vendor/font-awesome-4.3.0/mixins";
+
 .facebook-color {
   color: $facebook_color;
 }
@@ -90,9 +93,27 @@ select {
 }
 
 blockquote {
-  span {
-    font-family: $f4t_script_font;
+  font-family: $f4t_script_font;
+
+  &, p {
     font-size: $h4-font-size;
+    color: $blockquote-font-color !important;
+  }
+
+  cite {
+    &, p {
+      font-size: $blockquote-cite-font-size;
+      color: $blockquote-cite-font-color;
+    }
+  }
+
+  p:before {
+    @include fa-icon;
+    content: $fa-var-quote-right;
+    font-size: rem-calc($rem-base);
+    margin-right: rem-calc($rem-base / 2);
+    display: inline;
+    color: $blockquote-font-color;
   }
 }
 

@@ -3,11 +3,10 @@ layout: default
 title: About Us
 ---
 <div class="panel callout">
-  <h3>About us</h3>
   <div class="row">
     <div class="medium-6 columns">
-      <p>Fit4Tots was established by Sarah Dineen and Lesley Waldron; qualified personal trainers, nutritionists and, most importantly, mums to young children. Our goal is to reinforce healthy lifestyle habits from a young age through fitness, sport and play, helping to encourage positive associations with exercise, healthy eating and rest. We deliver classes in schools, nurseries and community venues and aim to make this program available for as many young children as possible to participate and enjoy.</p>
-      <p>Our classes aim to offer a broad range of sports and fitness to pre-school and reception age children, so that they get to try out and build skills for a variety of sports in a fun and varied environment. We have always been keen to make fitness and sport fun for our own little ones (as well as ourselves) and want to share this with as many others as possible.</p>
+      {% capture content %}{% include about_us/summary.md %}{% endcapture %}
+      {{ content | markdownify }}
     </div>
     <div class="medium-6 columns">
       <img data-interchange="[{{site.cloudinary_prefix}}/w_550,c_scale,f_auto/v1424204516/lesley_at_birdwell_q6fs0n (default)], [{{site.cloudinary_prefix}}/w_450,c_scale,f_auto/v1424204516/lesley_at_birdwell_q6fs0n (medium)]">
@@ -15,8 +14,6 @@ title: About Us
   </div>
 </div>
 <div class="panel">
-  <p>We offer classes for pre-schoolers, and school-age children (mainly up to Key Stage 1). At present classes are available in North Somerset and Bristol.</p>
-  <p>Classes will encourage children to try a variety of activities each week,  either linked to one particular sport, such as football or basketball, or to a group of sports, such as athletics. Our activities are designed to develop the skills and coordination children will need when they play sports as they get older. Turn taking, working as a team and playing for a purpose will be a part of our activities but we will not necessarily play a full team game.</p>
-  <p>We can also offer family fitness classes, where children and their parents can take part in an activity together.</p>
-  <p>If we don't yet offer a class near you, please get in touch as we may well be bringing one to  your area soon.</p>
+  {% capture content %}{% include about_us/more.md %}{% endcapture %}
+  {{ content | markdownify }}
 </div>

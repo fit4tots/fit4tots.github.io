@@ -6,7 +6,8 @@ title: Information for Parents
 <div class="panel callout">
   <div class="row">
     <div class="medium-6 columns">
-      <p>Our pre school classes are based in community venues in North Somerset and Bristol. Classes use music and games to warm up the children and their parents or carers, who are encouraged to join in some of the activities.</p>
+      {% capture content %}{% include parents/summary.md %}{% endcapture %}
+      {{ content | markdownify }}
       <a class="button secondary small" href="{{contact_us_path}}">Contact Us</a>
     </div>
     <div class="medium-6 columns">
@@ -16,36 +17,18 @@ title: Information for Parents
   </div>
 </div>
 <div class="panel">
-  <blockquote>
-    <span>
-      <i class="fa fa-quote-right"></i>
-      My 4 year old daughter and 2 year old twins really enjoyed the fits4tots session.
-      <span class="show-for-medium-up">
-        My twins are usually quite shy but were drawn into the fun warm up session and thoroughly enjoyed the easy to follow, fun activities.
-      </span>
-      Great for burning off some energy and getting them involved in group play. Would highly recommend!
-    </span>
-    <cite>Claire, Long Ashton</cite>
-  </blockquote>
+  {% capture content %}{% include parents/testimonial.md %}{% endcapture %}
+  {{ content | markdownify }}
 </div>
 <div class="panel">
-  <h3>Class content</h3>
-  <p>Classes are planned to encourage the development of key skills for sports; including hand eye coordination, agility and balance, running, jumping and throwing. Classes encourage cooperation and turn taking, independence and team work in various sessions. They are designed to be a fun and active 45 minutes getting children's heart rate up and developing skills and enthusiasm for sports and fitness that we hope will stay with them throughout their lives.</p>
+  {% capture content %}{% include parents/class_content.md %}{% endcapture %}
+  {{ content | markdownify }}
 </div>
 <div class="row" data-equalizer>
   <div class="medium-4 columns">
     <div class="panel" data-equalizer-watch>
-      <h4>Venues</h4>
-      <p>
-        Long Ashton Village Hall
-        <br>
-        <em>Wednesdays 10.45am</em>
-      </p>
-      <p>
-        St Andrew's Church Hall, Clevedon,
-        <br>
-        <em>Mondays 10am</em>
-      </p>
+      {% capture content %}{% include parents/venues.md %}{% endcapture %}
+      {{ content | markdownify }}
     </div>
   </div>
   <div class="medium-4 columns">
@@ -55,14 +38,8 @@ title: Information for Parents
   </div>
   <div class="medium-4 columns">
     <div class="panel" data-equalizer-watch>
-      <h3>Prices</h3>
-      <p>
-        Classes cost from
-        <strong>&pound;4.50</strong>
-        to
-        <strong>&pound;6</strong>
-        per session, with discounts for block booking.
-      </p>
+      {% capture content %}{% include parents/prices.md %}{% endcapture %}
+      {{ content | markdownify }}
       <p>
         Please
         <a href="{{contact_us_path}}">contact us</a>

@@ -10,33 +10,31 @@ title: Information for Schools
     </div>
     <div class="medium-6 columns">
       <br class="show-for-small-only">
-      <p>Our after school FitKid classes can be fitness, sport or a mixture of both. They usually run in a school hall, immediately after the end of the school day, although we can provide some classes during school hours if desirable.</p>
+      {% capture content %}{% include schools/summary.md %}{% endcapture %}
+      {{ content | markdownify }}
       <a class="button secondary small" href="{{contact_us_path}}">Contact Us</a>
     </div>
   </div>
 </div>
 <div class="panel">
-  <h3>Multi-skills sport sessions</h3>
-  <p>The multi-sports classes aim to introduce skills for a variety of sports to children in Reception, Year 1 and Year 2. Classes last approximately 50 minutes with a warm up, skills-based activities, and a cool down activity.</p>
-  <p>We aim to introduce a new set of skills every few weeks and then cement these in the activities we arrange for the class. The skills will be based on football, basketball, rugby, netball, tennis, athletics among others.  We will also introduce the principles of stretching, warming up and building strength and their importance to all sports.</p>
-  <p>Basic movements such as running, jumping, throwing and catching as well as balance, agility and coordination are applied to a range of activities in the sessions. There are some competitive and some co-operative activities within each session and activities become increasingly challenging throughout the school year.</p>
+  {% capture content %}{% include schools/sports.md %}{% endcapture %}
+  {{ content | markdownify }}
   <a class="button tiny medium-right" href="{{contact_us_path}}">Find out more</a>
   <br class="show-for-medium-up">
 </div>
 <div class="panel">
-  <h3>Fitness for kids</h3>
-  <p>We also run after school fitness classes will introduce children to a variety of fun exercises involving cardiovascular and an element of body weight strength training. Some classes are delivered in a circuit; encouraging some independence and cooperation between children, and other classes involve the whole  class with music and movement. We can offer these classes to a variety of age groups, but our emphasis is on Key Stage 1.</p>
+  {% capture content %}{% include schools/fitness.md %}{% endcapture %}
+  {{ content | markdownify }}
   <a class="button tiny medium-right" href="{{contact_us_path}}">Find out more</a>
   <br class="show-for-medium-up">
 </div>
 <div class="panel">
-  <h3>Trainers</h3>
   <div class="row">
     <div class="medium-6 columns">
-      Classes are delivered by our enthusiastic trained instructors with DBS checks and first aid training.
+      {% capture content %}{% include schools/trainers.md %}{% endcapture %}
+      {{ content | markdownify }}
     </div>
     <div class="medium-6 columns">
-      <br class="show-for-small-only">
       <img data-interchange="[{{site.cloudinary_prefix}}/w_550,c_scale,f_auto/v1424204516/lesley_at_birdwell_q6fs0n (default)], [{{site.cloudinary_prefix}}/w_450,c_scale,f_auto/v1424204516/lesley_at_birdwell_q6fs0n (medium)]">
     </div>
   </div>

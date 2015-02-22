@@ -1,0 +1,1 @@
+Our pre school classes are based in community venues in North Somerset and Bristol. Classes use music and games to warm up the children and their parents or carers, who are encouraged to join in some of the activities.
