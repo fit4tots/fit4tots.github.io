@@ -43,6 +43,9 @@ input[type="submit"], input[type="checkbox"], input[type="radio"], a, button {
   &:focus {
     outline-color: $input-focus-border-with-opacity;
   }
+  &:active {
+    outline: none;
+  }
 }
 
 

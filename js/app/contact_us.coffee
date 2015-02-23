@@ -11,6 +11,8 @@ $ ->
       catch err
         # ignore
 
+  return
+
 getQueryParam = (param) ->
   regex = new RegExp("[?&]#{encodeURIComponent(param)}=([^&]*)")
   match = regex.exec(location.search)
