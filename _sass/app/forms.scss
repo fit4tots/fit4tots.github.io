@@ -1,3 +1,5 @@
+$input-focus-border-with-opacity: rgba(scale-color($input-focus-border-color, $lightness: 40%), .8);
+
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -17,12 +19,32 @@ select {
   // All "text-like" input fields should have rounded corners
   border-radius: $global-radius;
 
+  &:focus {
+    outline: none;
+    border-color: $input-focus-border-with-opacity;
+    box-shadow: (inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba($input-focus-border-color,.6));
+  }
+
   @media #{$small-only} {
     // Set to 16px to ensure that iPhones don't zoom into the form
     // http://stevenosloan.com/articles/2013/prevent-zooming-on-forms
     font-size: 16px;
   }
+
+  // Fix problem with unwanted transition of error messages (until released in v5.5.2+)
+  // https://github.com/zurb/foundation/pull/6287
+  @if $input-include-glowing-effect == false {
+    @include transition(border-color 0.15s linear, background 0.15s linear);
+  }
 }
+
+
+input[type="submit"], input[type="checkbox"], input[type="radio"], a, button {
+  &:focus {
+    outline-color: $input-focus-border-with-opacity;
+  }
+}
+
 
 
 [data-abide] {
