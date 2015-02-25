@@ -68,26 +68,23 @@
 
 blockquote {
   font-family: $f4t_script_font;
+  margin-bottom: 0;
 
-  &, p {
+  p {
     font-size: $h4-font-size;
     color: $blockquote-font-color !important;
-  }
 
-  cite {
-    &, p {
-      font-size: $blockquote-cite-font-size;
-      color: $blockquote-cite-font-color;
+    &:first-child:before {
+      @include fa-icon;
+      content: $fa-var-quote-right;
+      font-size: rem-calc($rem-base);
+      display: inline;
+      color: $blockquote-font-color;
     }
-  }
 
-  p:before {
-    @include fa-icon;
-    content: $fa-var-quote-right;
-    font-size: rem-calc($rem-base);
-    margin-right: rem-calc($rem-base / 2);
-    display: inline;
-    color: $blockquote-font-color;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -1,3 +1,0 @@
->
-  My son couldn't stop talking about it on the way home today! He kept saying &lsquo;in Fit4Tots we did&hellip;&rsquo; He showed me his running like jelly and told me he had to stretch to be as big as a giraffe.
-  <cite>Nic, Early Birds mum</cite>

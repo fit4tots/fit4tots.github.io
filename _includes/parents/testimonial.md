@@ -1,9 +1,0 @@
->
-  My 4 year old daughter and 2 year old twins really enjoyed the fits4tots session.
-  <span>
-    <span class="show-for-medium-up">
-      My twins are usually quite shy but were drawn into the fun warm up session and thoroughly enjoyed the easy to follow, fun activities.
-    </span>
-  </span>
-  Great for burning off some energy and getting them involved in group play. Would highly recommend!
-  <cite>Claire, Long Ashton</cite>

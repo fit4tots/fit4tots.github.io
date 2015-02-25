@@ -31,8 +31,7 @@
 
 
 .panel
-  {% capture content %}{% include parents/testimonial.md %}{% endcapture %}
-  {{ content | markdownify }}
+  {% include parents/testimonial.html %}
 
 .panel
   {% capture content %}{% include parents/class_content.md %}{% endcapture %}
