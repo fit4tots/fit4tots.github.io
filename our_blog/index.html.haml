@@ -1,0 +1,47 @@
+:plain
+  ---
+  layout: default
+  title: "Health &amp; Fitness Blog"
+  ---
+
+{% for post in paginator.posts %}
+%h3
+  %a{href: "{{ post.url }}"} {{ post.title }}
+  %br.show-for-small-only
+  %small
+    {{ post.date | date: "%-d %b %Y" }}
+    {% if post.author %} &bull; {{ post.author }}{% endif %}
+
+.row
+  {% if post.image %}
+  .medium-4.columns
+    %a.th.radius{href: "{{ post.url }}"}
+      %img.radius{ data: {interchange: "[{{site.cloudinary_prefix}}/c_scale,f_auto,w_288/v1423519271/{{ post.image }} (default)], [{{site.cloudinary_prefix}}/c_scale,f_auto,w_600/v1423519106/{{ post.image }} (small-only)]"}}
+  {% endif %}
+
+  .medium-8.columns.end
+    %br.show-for-small-only
+
+    %p
+      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+      %a{href: "{{ post.url }}"}
+        %em Read more&hellip;
+{% endfor %}
+
+%ul.pagination
+  {% if paginator.previous_page %}
+  %li
+    {% if paginator.previous_page > 1 %}
+    %a.arrow{href: "{{ paginator.previous_page_path | prepend: site.baseurl }}"}
+      &laquo; Newer Articles
+    {% else %}
+    %a.arrow{href:"{{ '/blog' | prepend: site.baseurl }}"}
+      &laquo; Newer Articles
+    {% endif %}
+  {% endif %}
+
+  {% if paginator.next_page %}
+  %li
+    %a.arrow{href:"{{ paginator.next_page_path | prepend: site.baseurl }}"}
+      Older Articles &raquo;
+  {% endif %}

@@ -17,5 +17,8 @@ markdown: kramdown
 
 exclude: ['*.html.haml', 'js/**/*', 'css/**/*', 'Gemfile', 'Gemfile.lock', 'pre-commit.sh', 'Rakefile', 'Guardfile', '*.sublime-project']
 
+paginate: 5
+paginate_path: "/our_blog/page:num/"
+
 sass:
   style: :compressed

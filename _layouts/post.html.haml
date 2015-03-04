@@ -5,8 +5,23 @@
 
 %div
   %header
-    %h1 {{ page.title }}
-    %p {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} &bull; {{ page.author }}{% endif %}{% if page.meta %} &bull; {{ page.meta }}{% endif %}
+    %h5.subheader
+      {{ page.date | date: "%-d %b %Y" }}
+      {% if page.author %} &bull; {{ page.author }}{% endif %}{% if page.meta %} &bull; {{ page.meta }}{% endif %}
+
+  {% if page.image %}
+  .show-for-small-only
+    %img.radius{ data: {interchange: "[{{site.cloudinary_prefix}}/c_scale,f_auto,w_630/v1/{{ page.image }} (small-only)]"}}
+    %br
+    %br
+  {% endif %}
 
   %article {{ content }}
+
+  {% if page.image %}
+  .show-for-medium-up
+    %img.radius{ data: {interchange: "[{{site.cloudinary_prefix}}/c_scale,f_auto,w_970/v1/{{ page.image }} (medium-only)]"}}
+    %br
+    %br
+  {% endif %}
 

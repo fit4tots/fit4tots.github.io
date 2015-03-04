@@ -1,0 +1,54 @@
+---
+layout: default
+title: "Health &amp; Fitness Blog"
+---
+{% for post in paginator.posts %}
+<h3>
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  <br class="show-for-small-only">
+  <small>
+    {{ post.date | date: "%-d %b %Y" }}
+    {% if post.author %} &bull; {{ post.author }}{% endif %}
+  </small>
+</h3>
+<div class="row">
+  {% if post.image %}
+  <div class="medium-4 columns">
+    <a class="th radius" href="{{ post.url }}">
+      <img class="radius" data-interchange="[{{site.cloudinary_prefix}}/c_scale,f_auto,w_288/v1423519271/{{ post.image }} (default)], [{{site.cloudinary_prefix}}/c_scale,f_auto,w_600/v1423519106/{{ post.image }} (small-only)]">
+    </a>
+  </div>
+  {% endif %}
+  <div class="medium-8 columns end">
+    <br class="show-for-small-only">
+    <p>
+      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+      <a href="{{ post.url }}">
+        <em>Read more&hellip;</em>
+      </a>
+    </p>
+  </div>
+</div>
+{% endfor %}
+<ul class="pagination">
+  {% if paginator.previous_page %}
+  <li>
+    {% if paginator.previous_page > 1 %}
+    <a class="arrow" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
+      &laquo; Newer Articles
+    </a>
+    {% else %}
+    <a class="arrow" href="{{ '/blog' | prepend: site.baseurl }}">
+      &laquo; Newer Articles
+    </a>
+    {% endif %}
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li>
+    <a class="arrow" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+      Older Articles &raquo;
+    </a>
+  </li>
+  {% endif %}
+</ul>
