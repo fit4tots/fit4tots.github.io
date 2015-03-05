@@ -7,6 +7,9 @@
             %a{href: "{{ '/about_us' | prepend: site.baseurl }}"} About Us
 
           %li
+            %a{href: "{{ '/our_blog' | prepend: site.baseurl }}"} Our Blog
+
+          %li
             %a(href="mailto:{{site.email}}") {{ site.email }}
 
         {% include social_icons.html %}
