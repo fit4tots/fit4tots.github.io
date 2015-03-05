@@ -21,12 +21,10 @@ title: "Health &amp; Fitness Blog"
   {% endif %}
   <div class="medium-8 columns end">
     <br class="show-for-small-only">
-    <p>
-      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-      <a href="{{ post.url }}">
-        <em>Read more&hellip;</em>
-      </a>
-    </p>
+    {{ post.excerpt  }}
+    <a href="{{ post.url }}">
+      <em>Read more&hellip;</em>
+    </a>
   </div>
 </div>
 {% endfor %}

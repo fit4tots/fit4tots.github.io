@@ -22,10 +22,10 @@
   .medium-8.columns.end
     %br.show-for-small-only
 
-    %p
-      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-      %a{href: "{{ post.url }}"}
-        %em Read more&hellip;
+    {{ post.excerpt  }}
+
+    %a{href: "{{ post.url }}"}
+      %em Read more&hellip;
 {% endfor %}
 
 %ul.pagination
