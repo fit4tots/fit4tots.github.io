@@ -4,7 +4,7 @@ title:  "Should we ban junk food advertising?"
 date:   2015-03-02 10:00:00
 categories: food
 author: Lesley
-image: Fruit_juice_nkzq7d
+image: sweets_image_unllsk
 ---
 Almost two thirds of us want a ban on advertising junk food before 9pm, as part of protecting children from the influence of advertisers, according to a poll carried out by ComRes this month. 
 
