@@ -2,7 +2,7 @@
 layout: post
 title:  "Stand up and move!"
 date:   2014-11-05 10:00:00
-categories: food
+categories: activity
 author: Lesley
 image: kids_jumping2_q5zwh9
 ---
