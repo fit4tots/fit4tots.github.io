@@ -6,6 +6,7 @@ categories: activity
 author: Lesley
 image: childhood_memories_-_Spring_mtp7l0
 ---
+The Easter holidays are a great time to get out with your kids and explore your local area. It doesn't always have to cost a fortune, especially if you remember to pack a nice healthy picnic and snacks. Here are some of our recommendations for fun places to visit and where there are no steep entry fees. 
 
 **Clevedon sea front** - a great place to scoot or cycle, collect pebbles and build pebble towers, catch crabs and throw stones into rock pools and explore the Salthouse Fields playground. Take a healthy, balanced picnic and get the kids to choose their treat - whether it’s an ice-cream, a bounce on the bouncy castle or a ride on the train.
 
