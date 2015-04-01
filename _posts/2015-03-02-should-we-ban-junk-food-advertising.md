@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Should we ban junk food advertising?"
+title:  "Should we ban all junk food advertising?"
 date:   2015-03-02 10:00:00
 categories: food
 author: Lesley
