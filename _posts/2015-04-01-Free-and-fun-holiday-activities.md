@@ -13,4 +13,4 @@ image: childhood_memories_-_Spring_mtp7l0
 
 **Bristol harbourside** - we love exploring the harbour - watching the boats, maybe catching a ferry, crossing bridges, and splashing in the fountains around Millennium Square or opposite the Hippodrome. If it’s raining then the M-Shed is great to explore and usually has some activities for the little ones in school holidays. 
 
-I’m sure you have plenty more ideas - please share them with the rest of the Fit4Tots community on our [Facebook page](www.facebook.com/Fit4TotsUK)
+I’m sure you have plenty more ideas - please share them with the rest of the Fit4Tots community on our [Facebook page](http://www.facebook.com/Fit4TotsUK)
