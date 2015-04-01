@@ -4,7 +4,7 @@ title:  "Stand up and move!"
 date:   2014-11-05 10:00:00
 categories: food
 author: Lesley
-image: sweets_image_unllsk
+image: kids_jumping2_q5zwh9
 ---
 
 As a society, we are moving less. We spend a lot of time in our cars, on public transport, sitting behind a desk in and office, classroom or at home or sitting in front of the TV. 
