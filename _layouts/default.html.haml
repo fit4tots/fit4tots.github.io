@@ -11,10 +11,10 @@
             %img{src: "{{ '/images/logo-outline.svg' | prepend: site.baseurl }}" }
 
         %header.row
-          .small-2.medium-3.large-2.columns= nav_logo
+          .medium-3.large-2.columns= nav_logo
 
           {% unless page.title == null %}
-          .small-10.medium-9.large-8.columns.end
+          .small-12.medium-9.large-8.columns.end
             %h1 {{ page.title}}
           {% endunless %}
 
