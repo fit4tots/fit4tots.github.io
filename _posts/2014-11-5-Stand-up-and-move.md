@@ -2,12 +2,12 @@
 layout: post
 title:  "Stand up and move!"
 date:   2014-11-05 10:00:00
-categories: food
+categories: activity
 author: Lesley
 image: kids_jumping2_q5zwh9
 ---
 
-As a society, we are moving less. We spend a lot of time in our cars, on public transport, sitting behind a desk in and office, classroom or at home or sitting in front of the TV. 
+As a society, we are moving less. We spend a lot of time in our cars, on public transport, sitting behind a desk in and office, classroom or at home or sitting in front of the TV. What can families do to make sure our children keep moving? 
 
 *NHS guidelines* suggest that under-5s should be physically active at least 3 hours spread throughout the day. This could be light activity that involves moving around and playing, as well as more energetic activity like skipping, hopping, running and jumping. I don't know about you, but many under 5s I know can't sit still for long anyway! However, data on physical activity from the Health Survey for England shows that only around a third of children meet these guidelines by the time they are 5. What's happening?  And why is it so hard to meet these guidelines for the other two thirds. Busy lives, and kids natural attraction to TV, and in the case of some toddlers close to my heart, an aversion to walking if they know how far it will be! 
 
