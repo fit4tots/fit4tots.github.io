@@ -13,14 +13,13 @@ title: "Health &amp; Fitness Blog"
 </h3>
 <div class="row">
   {% if post.image %}
-  <div class="medium-4 columns">
+  <div class="medium-3 columns">
     <a class="th radius" href="{{ post.url }}">
-      <img class="radius" data-interchange="[{{site.cloudinary_prefix}}/c_scale,f_auto,w_288/v1423519271/{{ post.image }} (default)], [{{site.cloudinary_prefix}}/c_scale,f_auto,w_600/v1423519106/{{ post.image }} (small-only)]">
+      <img class="radius" data-interchange="[{{site.cloudinary_prefix}}/c_scale,f_auto,w_212/v1423519271/{{ post.image }} (default)], [{{site.cloudinary_prefix}}/c_scale,f_auto,w_600/v1423519106/{{ post.image }} (small-only)]">
     </a>
   </div>
   {% endif %}
-  <div class="medium-8 columns end">
-    <br class="show-for-small-only">
+  <div class="show-for-medium-up medium-9 columns end">
     {{ post.excerpt  }}
     <a href="{{ post.url }}">
       <em>Read more&hellip;</em>

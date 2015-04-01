@@ -6,7 +6,9 @@ categories: food
 author: Lesley
 image: Fruit_juice_nkzq7d
 ---
-Almost two thirds of us want a ban on advertising junk food before 9pm, as part of protecting children from the influence of advertisers, according to a poll carried out by ComRes this month. You can read the full results [here](http://comres.co.uk/wp-content/uploads/2015/03/Final-Results_RCPCH_Child-Health_Feb-2015.pdf).
+Almost two thirds of us want a ban on advertising junk food before 9pm, as part of protecting children from the influence of advertisers, according to a poll carried out by ComRes this month. 
+
+You can read the full results [here](http://comres.co.uk/wp-content/uploads/2015/03/Final-Results_RCPCH_Child-Health_Feb-2015.pdf).
 
 I would firmly agree with this, in fact, I wonder why the other third don’t agree on the ban on advertising?  Perhaps they work in the junk food industry? 
 

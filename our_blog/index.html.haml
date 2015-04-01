@@ -14,18 +14,17 @@
 
 .row
   {% if post.image %}
-  .medium-4.columns
+  .medium-3.columns
     %a.th.radius{href: "{{ post.url }}"}
-      %img.radius{ data: {interchange: "[{{site.cloudinary_prefix}}/c_scale,f_auto,w_288/v1423519271/{{ post.image }} (default)], [{{site.cloudinary_prefix}}/c_scale,f_auto,w_600/v1423519106/{{ post.image }} (small-only)]"}}
+      %img.radius{ data: {interchange: "[{{site.cloudinary_prefix}}/c_scale,f_auto,w_212/v1423519271/{{ post.image }} (default)], [{{site.cloudinary_prefix}}/c_scale,f_auto,w_600/v1423519106/{{ post.image }} (small-only)]"}}
   {% endif %}
 
-  .medium-8.columns.end
-    %br.show-for-small-only
-
+  .show-for-medium-up.medium-9.columns.end
     {{ post.excerpt  }}
 
     %a{href: "{{ post.url }}"}
       %em Read more&hellip;
+
 {% endfor %}
 
 %ul.pagination
