@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Free and fund Easter holiday activities"
+title:  "Free and fun Easter holiday activities"
 date:   2015-04-01 10:00:00
 categories: activity
 author: Lesley
