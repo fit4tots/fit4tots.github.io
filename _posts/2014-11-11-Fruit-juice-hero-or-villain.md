@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Should we ban junk food advertising?"
+title:  "Fruit juice - hero or villain?"
 date:   2014-11-11 10:00:00
 categories: food
 author: Lesley
