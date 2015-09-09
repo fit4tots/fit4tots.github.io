@@ -3,3 +3,5 @@ We can bring our Fit4Tots classes into your nursery for your pre-school age chil
 Classes are designed to build skills for sports as well as general fitness. We introduce skills according to the age and ability of the child, and the requirements of the EYFS framework and national curriculum.
 
 Our classes are designed to be fun and energetic. We want to build healthy habits for life and use music and games to make the experience a really positive one for all children.
+
+Parents increasingly look for the added extras that pre-school and nurseries can provide and we get consistently great feedback from the parents of children who take part. 
