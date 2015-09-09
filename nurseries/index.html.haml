@@ -38,4 +38,13 @@
   %br.show-for-medium-up
 
 .panel
+  {% capture content %}{% include nurseries/workshops.md %}{% endcapture %}
+  {{ content | markdownify }}
+
+
+.panel
+  {% capture content %}{% include nurseries/bookings.md %}{% endcapture %}
+  {{ content | markdownify }}
+
+.panel
   {% include nurseries/testimonial2.html %}
