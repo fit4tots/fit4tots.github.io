@@ -1,8 +1,9 @@
 # Fit4Tots website (Github Pages)
 
-http://www.fit4tots.com
+* http://www.fit4tots.com
+* http://fit4tots.github.io
 
-## Installation
+## Development Environment
 
 When cloning this repository for the first time, install this commit hook:
 
