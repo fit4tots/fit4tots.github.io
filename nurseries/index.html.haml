@@ -19,7 +19,6 @@
       - img = '/v1424269418/boy_bending_eglvgz'
       %img{data: { interchange: "[{{site.cloudinary_prefix}}#{default_tr}#{img} (default)], [{{site.cloudinary_prefix}}/w_450,c_scale,f_auto/#{img} (medium)]"}}
 
-
 .panel
   .row
     .medium-3.columns
@@ -38,12 +37,11 @@
   %br.show-for-medium-up
 
 .panel
-  {% capture content %}{% include nurseries/workshops.md %}{% endcapture %}
+  {% capture content %}{% include nurseries/bookings.md %}{% endcapture %}
   {{ content | markdownify }}
 
-
 .panel
-  {% capture content %}{% include nurseries/bookings.md %}{% endcapture %}
+  {% capture content %}{% include nurseries/workshops.md %}{% endcapture %}
   {{ content | markdownify }}
 
 .panel
