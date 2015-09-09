@@ -29,6 +29,12 @@ title: Information for Schools
   <br class="show-for-medium-up">
 </div>
 <div class="panel">
+  {% capture content %}{% include schools/workshops.md %}{% endcapture %}
+  {{ content | markdownify }}
+  <a class="button tiny medium-right" href="{{contact_us_path}}">Find out more</a>
+  <br class="show-for-medium-up">
+</div>
+<div class="panel">
   <div class="row">
     <div class="medium-6 columns">
       {% capture content %}{% include schools/trainers.md %}{% endcapture %}

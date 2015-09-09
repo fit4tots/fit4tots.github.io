@@ -41,6 +41,12 @@
   = more_button
 
 .panel
+  {% capture content %}{% include schools/workshops.md %}{% endcapture %}
+  {{ content | markdownify }}
+
+  = more_button
+
+.panel
   .row
     .medium-6.columns
       {% capture content %}{% include schools/trainers.md %}{% endcapture %}
