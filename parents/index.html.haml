@@ -31,11 +31,14 @@
 
 
 .panel
-  {% include parents/testimonial.html %}
+  {% include parents/testimonial1.html %}
 
 .panel
   {% capture content %}{% include parents/class_content.md %}{% endcapture %}
   {{ content | markdownify }}
+
+.panel
+  {% include parents/testimonial2.html %}
 
 .row(data-equalizer)
   .medium-4.columns

@@ -1,7 +1,5 @@
 #### Venues
 
-Long Ashton Village Hall  
-_Wednesdays 10.45am_
+We are excited to be developing new classes in North Somerset and South Bristol in 2016.
 
-St Andrew's Church Hall, Clevedon  
-_Mondays 10am_
+Please let us know your contact details so that we can keep you up to date with developments.

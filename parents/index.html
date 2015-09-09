@@ -17,11 +17,14 @@ title: Information for Parents
   </div>
 </div>
 <div class="panel">
-  {% include parents/testimonial.html %}
+  {% include parents/testimonial1.html %}
 </div>
 <div class="panel">
   {% capture content %}{% include parents/class_content.md %}{% endcapture %}
   {{ content | markdownify }}
+</div>
+<div class="panel">
+  {% include parents/testimonial2.html %}
 </div>
 <div class="row" data-equalizer>
   <div class="medium-4 columns">
